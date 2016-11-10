@@ -1,0 +1,403 @@
+<#@ template language="C#" hostSpecific="true" #>
+<#@ output encoding="utf-8"#>
+
+<#@ include file="Helpers.tt" #>
+<#@ include file="StringExtensions.tt" #>
+<#@ include file="GeneralExtensions.tt" #>
+<#@ include file="Inflector.tt" #>
+
+<#@ assembly name="System.Core.dll" #>
+
+<#@ import namespace="System" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models" #>
+
+<#@ parameter name="Model" type="HedgehogDevelopment.SitecoreProject.VSIP.CodeGeneration.Models.SitecoreItem" #>
+<#@ parameter name="DefaultNamespace" type="System.String" #>
+
+<#
+
+// we only act on Templates
+SitecoreTemplate template = Model as SitecoreTemplate;
+if (template == null)
+{
+	return "";
+}
+
+#>
+
+
+<#
+string Tool = "Team Development for Sitecore - Mindshift.tt";
+string ToolVersion = "1.0";
+#>
+
+namespace <#= GetNamespace(DefaultNamespace, template)#>
+{
+    
+    /// <summary>
+	/// <#= AsInterfaceName(template.Name) #> Interface
+	/// <para><#= GetValue(template.SitecoreFields, "__Short description")#></para>
+	/// <para>Path: <#= template.Path #></para>	
+	/// <para>ID: <#= template.ID.ToString() #></para>	
+	/// </summary>
+	public partial interface <#= AsInterfaceName(template.Name) #> <#=GetObjectInheritanceDefinition(DefaultNamespace, template, false, (string s) => AsInterfaceName(s))#>
+	{
+			<#foreach(SitecoreField field in GetFieldsForTemplate(template, false)){#>
+					/// <summary>
+					/// The <#=field.Name#> field.
+					/// <para><#= GetValue(field.SitecoreFields, "__Short description")#></para>
+					/// <para>Field Type: <#=field.Type#></para>		
+					/// <para>Field ID: <#=field.ID.ToString()#></para>
+					/// <para>Custom Data: <#=field.Data#></para>
+					/// </summary>
+                    [SitecoreField("<#=field.ID.ToString()#>")]
+                    <#if(CheckForRenderingTemplates(template)){#> <#=GetRenderingFieldType(field)#> <#= GetPropertyName(field)#>  {get; }
+                    <#}else{#>
+					<#=GetFieldType(field)#> <#=GetPropertyName(field)#>  {get; }
+                    <#}#>
+			
+			<#}#>
+    }
+
+	/// <summary>
+	/// <#= AsClassName(template.Name) #>
+	/// <para><#= GetValue(template.SitecoreFields, "__Short description")#></para>
+	/// <para>Path: <#= template.Path #></para>	
+	/// <para>ID: <#= template.ID.ToString() #></para>	
+	/// </summary>
+	public partial class <#= AsClassName(template.Name) #> : <#if(CheckForRenderingTemplates(template)){#>BaseRenderingModel, <#}else{#>BaseModel, IRenderingModel,<#}#><#=AsInterfaceName(template.Name)#>
+	{
+
+        <#if(CheckForRenderingTemplates(template)){#>
+        /// <summary>
+        /// Constructor with with Item passed in
+        /// USE THIS CONSTRUCTOR FOR MANUAL INSTANTIATION
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+        public <#= AsClassName(template.Name) #>(NameValueCollection parameters)
+        {
+            Parameters = parameters;
+        }
+        <#}else{#>
+        /// <summary>
+		/// [Deprecated]
+        /// The Template ID for <#=template.Path #> as string
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+		public static readonly string TemplateId = "<#=template.ID.ToString()#>";
+
+        /// <summary>
+		/// The Template ID for <#=template.Path #> as ID
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+		public static readonly ID TemplateID = new ID("<#=template.ID.ToString()#>");
+
+        public void Initialize(Rendering rendering)
+        {
+            InnerItem = rendering.Item;
+        }
+
+        /// <summary>
+		/// Constructor with with Item passed in
+        /// USE THIS CONSTRUCTOR FOR MANUAL INSTANTIATION
+		/// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+		public <#= AsClassName(template.Name) #>(Item innerItem)
+		{
+         	InnerItem = innerItem;
+		}
+
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+		public static implicit operator <#= AsClassName(template.Name) #>(Item innerItem)
+		{
+			return innerItem != null ? new <#= AsClassName(template.Name) #>(innerItem) : null;
+		} 
+	   
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+		public static implicit operator Item(<#= AsClassName(template.Name) #> templateItem)
+		{
+			return templateItem != null ? templateItem.InnerItem : null;
+		}
+        <#}#>
+        /// <summary>
+		/// Empty Constructor used by Sitecore Controller
+        /// DO NOT ENVOKE MANUALLY
+		/// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+		public <#= AsClassName(template.Name) #>()
+		{
+         	
+		}
+	   
+		<#foreach(SitecoreField field in GetFieldsForTemplate(template, true)){#>
+
+				/// <summary>
+				/// The <#=field.Name#> field.
+				/// <para>Field Type: <#=field.Type#></para>		
+				/// <para>Field ID: <#=field.ID.ToString()#></para>
+				/// <para>Custom Data: <#=field.Data#></para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+                [SitecoreField("<#=field.ID.ToString()#>")]
+                <#if(CheckForRenderingTemplates(template)){#> 
+                public virtual <#=GetRenderingFieldType(field)#> <#= GetPropertyName(field)#>  {get { return new <#=GetRenderingFieldType(field)#>(Parameters.Get("<#=field.Name#>")); } }
+                <#}else{#>
+				public virtual <#=GetFieldType(field)#> <#= GetPropertyName(field) #>  {get { return new <#=GetFieldType(field)#>(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("<#=field.ID.ToString()#>")] : null)); } }
+                <#}#>
+
+					
+		<#}#>	
+	}
+}
+
+
+<#+
+/// <summary>
+/// Gets the inheritance string for the generated template
+/// </summary>
+/// <param name="defaultNamespace">The default namespace.</param>
+/// <param name="template">The template to get the bases for.</param>
+/// <param name="nameFunc">The function to run the base templates names through.</param>
+/// <returns></returns>
+public static string GetObjectInheritanceDefinition(string defaultNamespace, SitecoreTemplate item, bool includeLeadingComma, Func<string, string> nameFunc)
+{
+	if (item.BaseTemplates.Count > 0)
+	{
+		return " : " + string.Concat(includeLeadingComma ? ", " : "",
+								item.BaseTemplates
+								.Select( bt => GetFullyQualifiedName(defaultNamespace, bt, nameFunc)) // select the name of the template with an 'I' prefix
+								.Aggregate( (total,next) => total + ", " + next) // basically a string.join(string[], '')
+							);
+	}
+	return "";
+}
+
+
+public static bool CheckForRenderingTemplates(SitecoreTemplate item)
+{
+    if (item.Name.ToLower().Contains("rendering"))
+        {
+            return true;
+        }
+        else
+        {
+
+            return false;
+        }
+
+
+}
+
+public static string GetBasicRenderingFieldType(SitecoreField field)
+{
+        switch(field.Type.ToLower())
+		{		
+			case "checkbox":
+				return "ChkboxFld";
+
+			case "date":
+			case "datetime":
+				return "DateTimeFld";
+		
+			case "number":	
+			case "integer":
+				return "IntFld";
+		
+            case "treelist":
+			case "treelistex":
+				return "TrListFld";
+
+            case "checklist":
+            case "droplist":
+			case "grouped droplist":
+			case "multilist":
+				return "ListFld";
+				
+			
+			case "grouped droplink":
+			case "droplink":
+			case "lookup":
+			case "droptree":
+			case "reference":
+			case "tree":
+				return "LookupFld";
+		
+			case "image":
+				return "ImgFld";
+
+			case "file":
+            case "general link":
+				return null;
+				
+		
+			case "rich text":
+			case "html":
+			case "single-line text":
+			case "multi-line text":
+			case "text":
+			case "memo":
+				return "StringFld";
+
+			default:
+				return null;
+
+           
+		}
+    }
+
+
+public static string GetRenderingFieldType(SitecoreField field)
+    {
+        	if (field != null && field.Type != null)
+            {
+                    string fieldType = GetBasicRenderingFieldType(field);
+
+                //Pull out any 'type' param from the custom data field on the field in TDS
+		        //string customType = GetCustomProperty(field.Data, "type");
+		        string generic = GetCustomProperty(field.Data, "generic");
+		
+               
+                
+
+
+                if (generic != "")
+		        {
+                    return fieldType + "<" + generic + ">";
+		        }
+                else
+                {
+                        string customType = GetCustomProperty(field.Data, "type");
+                        if(customType != "" && fieldType.ToLower().Contains("lookupfld"))
+                        {
+                            return fieldType + "<" + customType + ">";
+                        }
+                
+                        if(fieldType.ToLower().Contains("multilist") || fieldType.ToLower().Contains("checklist") || fieldType.ToLower().Contains("treelist"))
+                        {
+                            return fieldType;
+                        }
+                        else
+                        {
+                            return fieldType;
+                        }
+              
+                }
+
+		
+	        }
+            else 
+	        {
+	           throw new Exception("There is no 'Type' field on the " + field.Name + " field.");
+	        }
+    }
+
+
+public static string GetBasicFieldType(SitecoreField field)
+    {
+        switch(field.Type.ToLower())
+		{		
+			case "checkbox":
+				return "CheckBoxFld";
+
+			case "date":
+			case "datetime":
+				return "DateFld";
+		
+			case "number":	
+			case "integer":
+				return "IntegerFld";
+		
+			case "treelist":
+			case "treelistex":
+				return "TreeListFld";
+				
+			case "checklist":
+				return "CheckListFld";
+			
+			case "droplist":
+			case "grouped droplist":
+			case "multilist":
+                return "MultiListFld";
+
+			case "grouped droplink":
+			case "droplink":
+			case "lookup":
+			case "droptree":
+			case "reference":
+			case "tree":
+				return "LookupFld";
+		
+			case "file":
+				return "FileFld";
+		
+			case "image":
+				return "ImageFld";
+		
+			case "general link":
+            case "custom general link":
+            case "general link with search":
+            case "custom general link with search":
+						case "user list":
+				return "GeneralLinkFld";
+		
+			case "rich text":
+			case "html":
+			case "single-line text":
+			case "multi-line text":
+			case "text":
+			case "memo":
+				return "TextFld";
+
+			default:
+				return null;
+
+           
+		}
+    }
+
+public static string GetFieldType(SitecoreField field)
+{
+	if (field != null && field.Type != null)
+    {
+            string fieldType = GetBasicFieldType(field);
+
+        //Pull out any 'type' param from the custom data field on the field in TDS
+		
+		string generic = GetCustomProperty(field.Data, "generic");
+		
+        if (generic != "")
+		{
+            return fieldType + "<" + generic + ">";
+		}
+        else
+        {
+                string customType = GetCustomProperty(field.Data, "type");
+                if(customType != "" && fieldType.ToLower().Contains("lookupfld"))
+                {
+                    return fieldType + "<" + customType + ">";
+                }
+                
+                if(fieldType.ToLower().Contains("multilist") || fieldType.ToLower().Contains("checklist") || fieldType.ToLower().Contains("treelist"))
+                {
+                    return fieldType;
+                }
+                else
+                {
+                    return fieldType;
+                }
+              
+        }
+
+		
+	}
+    else 
+	{
+	   throw new Exception("There is no 'Type' field on the " + field.Name + " field.");
+	}
+} 
+
+
+#>

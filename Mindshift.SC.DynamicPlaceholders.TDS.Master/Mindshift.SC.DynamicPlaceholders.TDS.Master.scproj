@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b55a36ec-4c7b-49dd-a037-80debdc734c5</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\Mindshift.SC.DynamicPlaceholders.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{3f2ec967-3f5a-449c-a980-9a5e7b38482a}|Mindshift.SC.DynamicPlaceholders.Web\Mindshift.SC.DynamicPlaceholders.Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Mindshift.SC.DynamicPlaceholders.Web.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Mindshift.SC.DynamicPlaceholders.TDS.Master</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Mindshift.SC.DynamicPlaceholders.TDS.Master</AssemblyName>
+    <Name>Mindshift.SC.DynamicPlaceholders.TDS.Master</Name>
+    <RootNamespace>Mindshift.SC.DynamicPlaceholders.TDS.Master</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+    <EnableCodeGeneration>False</EnableCodeGeneration>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Mindshift.SC.DynamicPlaceholders</CodeGenTargetProject>
+    <CodeGenFile>SC\TemplateClasses.cs</CodeGenFile>
+    <BaseTransformFile>mindshift.tt</BaseTransformFile>
+    <HeaderTransformFile>mindshiftheader.tt</HeaderTransformFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Mindshift.SC.DynamicPlaceholders.TDS.Master_Debug.xml</ValidationSettingsFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mindshift.SC.DynamicPlaceholders.Web\Mindshift.SC.DynamicPlaceholders.Web.csproj">
+      <Project>{3f2ec967-3f5a-449c-a980-9a5e7b38482a}</Project>
+      <Name>Mindshift.SC.DynamicPlaceholders.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+</Project>

@@ -1,0 +1,211 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.Common.Web", "Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj", "{8E317E03-22C8-452B-9AB4-416A05FE6399}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7711AC7E-0018-49F3-BF03-964DDA6B278E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.Common", "Mindshift.SC.Common\Mindshift.SC.Common.csproj", "{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicPlaceholders", "DynamicPlaceholders", "{7DF94942-8DFA-4693-BA07-4EFD6C1FBEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.DynamicPlaceholders", "Mindshift.SC.DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders.csproj", "{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.DynamicPlaceholders.Web", "Mindshift.SC.DynamicPlaceholders.Web\Mindshift.SC.DynamicPlaceholders.Web.csproj", "{3F2EC967-3F5A-449C-A980-9A5E7B38482A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdoLogging", "AdoLogging", "{1085C010-F335-4D95-8391-FF77A606A3C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AdoLogging.Web", "Mindshift.SC.AdoLogging.Web\Mindshift.SC.AdoLogging.Web.csproj", "{112F1DCD-4477-45F7-BEB6-272882CE93B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AdoLogging", "Mindshift.SC.AdoLogging\Mindshift.SC.AdoLogging.csproj", "{B57EB853-7317-4A92-B211-57108C0C837F}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.Common.TDS.Master", "Mindshift.SC.Common.TDS.Master\Mindshift.SC.Common.TDS.Master.scproj", "{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.Common.TDS.Core", "Mindshift.SC.Common.TDS.Core\Mindshift.SC.Common.TDS.Core.scproj", "{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AdoLogging.TDS.Core", "Mindshift.SC.AdoLogging.TDS.Core\Mindshift.SC.AdoLogging.TDS.Core.scproj", "{6022A104-0D1E-45D1-9419-7626D4DDF862}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AdoLogging.TDS.Master", "Mindshift.SC.AdoLogging.TDS.Master\Mindshift.SC.AdoLogging.TDS.Master.scproj", "{F68047E7-7BAE-4072-837D-891D8977D1B6}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.DynamicPlaceholders.TDS.Core", "Mindshift.SC.DynamicPlaceholders.TDS.Core\Mindshift.SC.DynamicPlaceholders.TDS.Core.scproj", "{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.DynamicPlaceholders.TDS.Master", "Mindshift.SC.DynamicPlaceholders.TDS.Master\Mindshift.SC.DynamicPlaceholders.TDS.Master.scproj", "{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TfsPackageDesigner", "TfsPackageDesigner", "{44646FB0-BD7B-4932-913F-6B30D426A386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.TfsPackageDesigner", "Mindshift.SC.TfsPackageDesigner\Mindshift.SC.TfsPackageDesigner.csproj", "{C57D73DE-BB69-4604-9E1C-F94DE9A05241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.TfsPackageDesigner.Web", "Mindshift.SC.TfsPackageDesigner.Web\Mindshift.SC.TfsPackageDesigner.Web.csproj", "{FEC5E915-2068-4202-B095-63B953F816CB}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.TfsPackageDesigner.TDS.Master", "Mindshift.SC.TfsPackageDesigner.TDS.Master\Mindshift.SC.TfsPackageDesigner.TDS.Master.scproj", "{B850BAAC-1E86-40EB-A961-ABD074089A34}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://invi01-tfs2010:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Mindshift.SC.AdoLogging.TDS.Core\\Mindshift.SC.AdoLogging.TDS.Core.scproj
+		SccProjectTopLevelParentUniqueName1 = Mindshift.SC.sln
+		SccProjectName1 = Mindshift.SC.AdoLogging.TDS.Core
+		SccLocalPath1 = Mindshift.SC.AdoLogging.TDS.Core
+		SccProjectUniqueName2 = Mindshift.SC.AdoLogging.TDS.Master\\Mindshift.SC.AdoLogging.TDS.Master.scproj
+		SccProjectTopLevelParentUniqueName2 = Mindshift.SC.sln
+		SccProjectName2 = Mindshift.SC.AdoLogging.TDS.Master
+		SccLocalPath2 = Mindshift.SC.AdoLogging.TDS.Master
+		SccProjectUniqueName3 = Mindshift.SC.AdoLogging.Web\\Mindshift.SC.AdoLogging.Web.csproj
+		SccProjectTopLevelParentUniqueName3 = Mindshift.SC.sln
+		SccProjectName3 = Mindshift.SC.AdoLogging.Web
+		SccLocalPath3 = Mindshift.SC.AdoLogging.Web
+		SccProjectUniqueName4 = Mindshift.SC.AdoLogging\\Mindshift.SC.AdoLogging.csproj
+		SccProjectTopLevelParentUniqueName4 = Mindshift.SC.sln
+		SccProjectName4 = Mindshift.SC.AdoLogging
+		SccLocalPath4 = Mindshift.SC.AdoLogging
+		SccProjectUniqueName5 = Mindshift.SC.Common.TDS.Core\\Mindshift.SC.Common.TDS.Core.scproj
+		SccProjectTopLevelParentUniqueName5 = Mindshift.SC.sln
+		SccProjectName5 = Mindshift.SC.Common.TDS.Core
+		SccLocalPath5 = Mindshift.SC.Common.TDS.Core
+		SccProjectUniqueName6 = Mindshift.SC.Common.TDS.Master\\Mindshift.SC.Common.TDS.Master.scproj
+		SccProjectTopLevelParentUniqueName6 = Mindshift.SC.sln
+		SccProjectName6 = Mindshift.SC.Common.TDS.Master
+		SccLocalPath6 = Mindshift.SC.Common.TDS.Master
+		SccProjectUniqueName7 = Mindshift.SC.Common.Web\\Mindshift.SC.Common.Web.csproj
+		SccProjectTopLevelParentUniqueName7 = Mindshift.SC.sln
+		SccProjectName7 = Mindshift.SC.Common.Web
+		SccLocalPath7 = Mindshift.SC.Common.Web
+		SccProjectUniqueName8 = Mindshift.SC.Common\\Mindshift.SC.Common.csproj
+		SccProjectTopLevelParentUniqueName8 = Mindshift.SC.sln
+		SccProjectName8 = Mindshift.SC.Common
+		SccLocalPath8 = Mindshift.SC.Common
+		SccProjectUniqueName9 = Mindshift.SC.DynamicPlaceholders.TDS.Core\\Mindshift.SC.DynamicPlaceholders.TDS.Core.scproj
+		SccProjectTopLevelParentUniqueName9 = Mindshift.SC.sln
+		SccProjectName9 = Mindshift.SC.DynamicPlaceholders.TDS.Core
+		SccLocalPath9 = Mindshift.SC.DynamicPlaceholders.TDS.Core
+		SccProjectUniqueName10 = Mindshift.SC.DynamicPlaceholders.TDS.Master\\Mindshift.SC.DynamicPlaceholders.TDS.Master.scproj
+		SccProjectTopLevelParentUniqueName10 = Mindshift.SC.sln
+		SccProjectName10 = Mindshift.SC.DynamicPlaceholders.TDS.Master
+		SccLocalPath10 = Mindshift.SC.DynamicPlaceholders.TDS.Master
+		SccProjectUniqueName11 = Mindshift.SC.DynamicPlaceholders.Web\\Mindshift.SC.DynamicPlaceholders.Web.csproj
+		SccProjectTopLevelParentUniqueName11 = Mindshift.SC.sln
+		SccProjectName11 = Mindshift.SC.DynamicPlaceholders.Web
+		SccLocalPath11 = Mindshift.SC.DynamicPlaceholders.Web
+		SccProjectUniqueName12 = Mindshift.SC.DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders.csproj
+		SccProjectTopLevelParentUniqueName12 = Mindshift.SC.sln
+		SccProjectName12 = Mindshift.SC.DynamicPlaceholders
+		SccLocalPath12 = Mindshift.SC.DynamicPlaceholders
+		SccProjectUniqueName13 = Mindshift.SC.TfsPackageDesigner.TDS.Master\\Mindshift.SC.TfsPackageDesigner.TDS.Master.scproj
+		SccProjectTopLevelParentUniqueName13 = Mindshift.SC.sln
+		SccProjectName13 = Mindshift.SC.TfsPackageDesigner.TDS.Master
+		SccLocalPath13 = Mindshift.SC.TfsPackageDesigner.TDS.Master
+		SccProjectUniqueName14 = Mindshift.SC.TfsPackageDesigner.Web\\Mindshift.SC.TfsPackageDesigner.Web.csproj
+		SccProjectTopLevelParentUniqueName14 = Mindshift.SC.sln
+		SccProjectName14 = Mindshift.SC.TfsPackageDesigner.Web
+		SccLocalPath14 = Mindshift.SC.TfsPackageDesigner.Web
+		SccProjectUniqueName15 = Mindshift.SC.TfsPackageDesigner\\Mindshift.SC.TfsPackageDesigner.csproj
+		SccProjectTopLevelParentUniqueName15 = Mindshift.SC.sln
+		SccProjectName15 = Mindshift.SC.TfsPackageDesigner
+		SccLocalPath15 = Mindshift.SC.TfsPackageDesigner
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E317E03-22C8-452B-9AB4-416A05FE6399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E317E03-22C8-452B-9AB4-416A05FE6399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E317E03-22C8-452B-9AB4-416A05FE6399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E317E03-22C8-452B-9AB4-416A05FE6399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2EC967-3F5A-449C-A980-9A5E7B38482A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2EC967-3F5A-449C-A980-9A5E7B38482A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2EC967-3F5A-449C-A980-9A5E7B38482A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2EC967-3F5A-449C-A980-9A5E7B38482A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{112F1DCD-4477-45F7-BEB6-272882CE93B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{112F1DCD-4477-45F7-BEB6-272882CE93B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{112F1DCD-4477-45F7-BEB6-272882CE93B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{112F1DCD-4477-45F7-BEB6-272882CE93B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B57EB853-7317-4A92-B211-57108C0C837F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B57EB853-7317-4A92-B211-57108C0C837F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B57EB853-7317-4A92-B211-57108C0C837F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B57EB853-7317-4A92-B211-57108C0C837F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6022A104-0D1E-45D1-9419-7626D4DDF862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6022A104-0D1E-45D1-9419-7626D4DDF862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6022A104-0D1E-45D1-9419-7626D4DDF862}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6022A104-0D1E-45D1-9419-7626D4DDF862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6022A104-0D1E-45D1-9419-7626D4DDF862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6022A104-0D1E-45D1-9419-7626D4DDF862}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F68047E7-7BAE-4072-837D-891D8977D1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68047E7-7BAE-4072-837D-891D8977D1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68047E7-7BAE-4072-837D-891D8977D1B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F68047E7-7BAE-4072-837D-891D8977D1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68047E7-7BAE-4072-837D-891D8977D1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68047E7-7BAE-4072-837D-891D8977D1B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C57D73DE-BB69-4604-9E1C-F94DE9A05241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57D73DE-BB69-4604-9E1C-F94DE9A05241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57D73DE-BB69-4604-9E1C-F94DE9A05241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57D73DE-BB69-4604-9E1C-F94DE9A05241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC5E915-2068-4202-B095-63B953F816CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC5E915-2068-4202-B095-63B953F816CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC5E915-2068-4202-B095-63B953F816CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC5E915-2068-4202-B095-63B953F816CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B850BAAC-1E86-40EB-A961-ABD074089A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B850BAAC-1E86-40EB-A961-ABD074089A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B850BAAC-1E86-40EB-A961-ABD074089A34}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B850BAAC-1E86-40EB-A961-ABD074089A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B850BAAC-1E86-40EB-A961-ABD074089A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B850BAAC-1E86-40EB-A961-ABD074089A34}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E317E03-22C8-452B-9AB4-416A05FE6399} = {7711AC7E-0018-49F3-BF03-964DDA6B278E}
+		{FF3446D1-E209-4A3B-B4AB-8979B10B28BF} = {7711AC7E-0018-49F3-BF03-964DDA6B278E}
+		{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5} = {7DF94942-8DFA-4693-BA07-4EFD6C1FBEF9}
+		{3F2EC967-3F5A-449C-A980-9A5E7B38482A} = {7DF94942-8DFA-4693-BA07-4EFD6C1FBEF9}
+		{112F1DCD-4477-45F7-BEB6-272882CE93B4} = {1085C010-F335-4D95-8391-FF77A606A3C9}
+		{B57EB853-7317-4A92-B211-57108C0C837F} = {1085C010-F335-4D95-8391-FF77A606A3C9}
+		{E5034B0F-DB6E-404E-A070-EEDDDCF8B130} = {7711AC7E-0018-49F3-BF03-964DDA6B278E}
+		{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A} = {7711AC7E-0018-49F3-BF03-964DDA6B278E}
+		{6022A104-0D1E-45D1-9419-7626D4DDF862} = {1085C010-F335-4D95-8391-FF77A606A3C9}
+		{F68047E7-7BAE-4072-837D-891D8977D1B6} = {1085C010-F335-4D95-8391-FF77A606A3C9}
+		{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387} = {7DF94942-8DFA-4693-BA07-4EFD6C1FBEF9}
+		{B55A36EC-4C7B-49DD-A037-80DEBDC734C5} = {7DF94942-8DFA-4693-BA07-4EFD6C1FBEF9}
+		{C57D73DE-BB69-4604-9E1C-F94DE9A05241} = {44646FB0-BD7B-4932-913F-6B30D426A386}
+		{FEC5E915-2068-4202-B095-63B953F816CB} = {44646FB0-BD7B-4932-913F-6B30D426A386}
+		{B850BAAC-1E86-40EB-A961-ABD074089A34} = {44646FB0-BD7B-4932-913F-6B30D426A386}
+	EndGlobalSection
+EndGlobal
