@@ -38,7 +38,7 @@
 	$scope.view = {
 		tab: $routeParams.tab,
 		currentLayoutType: null,
-		itemId: getQueryStringParameterByName('itemid'),
+		itemId: getQueryStringParameterByName('id'),
 		database: getQueryStringParameterByName('database'),
 		data: {
 			LayoutTypes: null

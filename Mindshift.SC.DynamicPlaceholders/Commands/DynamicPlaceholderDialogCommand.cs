@@ -1,12 +1,13 @@
-﻿using Sitecore.Shell.Framework.Commands;
+﻿using Mindshift.SC.Common;
+using Sitecore.Shell.Framework.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mindshift.SC.Common.Commands {
-	class DynamicPlaceholderDialogCommand : OpenDialogCommand {
+namespace Mindshift.SC.DynamicPlaceholders.Commands {
+	public class DynamicPlaceholderDialogCommand : OpenDialogCommand {
 		public override void Execute(CommandContext context) {
 
 			OpenDialog("dynamicplaceholders", new Dictionary<string, string> { { "id", context.Items[0].ID.ToString() }, { "database", context.Items[0].Database.Name } });
