@@ -1,0 +1,94 @@
+----item----
+version: 1
+id: {8581A62D-626B-4D33-81B8-F9DBDD014B3B}
+database: master
+path: /sitecore/templates/Mindshift SC/Auto Publish/Publish Schedule/__Standard Values
+parent: {5C6A52B1-648C-4AFC-9553-7F5079CEFCCB}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C6A52B1-648C-4AFC-9553-7F5079CEFCCB}
+templatekey: Publish Schedule
+created: 20170627T142258Z
+
+----version----
+language: en
+version: 1
+revision: 40022048-55a7-436a-bb57-25fef376ed5d
+
+----field----
+field: {3F97D2AE-5C82-4D54-9057-5279A18B04E8}
+name: Frequency
+key: frequency
+content-length: 38
+
+{63326A7E-9A71-43DD-9C35-EB1B710FE9AC}
+----field----
+field: {6300FF06-541A-40E4-868F-47EAE97E82CE}
+name: Day of the Month
+key: day of the month
+content-length: 1
+
+1
+----field----
+field: {BA666A02-A715-409B-AED0-D8EC789038B7}
+name: Days of the Week
+key: days of the week
+content-length: 272
+
+{CF192FDC-8F53-4235-8C2E-DC51F651BF05}|{997FE5CF-98D6-496F-975C-27DAD074D791}|{E5555CAE-C6B5-443F-B582-EFCA33F840C0}|{D473324D-B353-4E89-AF21-76AEF15DBC89}|{FEC56497-78C6-413B-9BBE-63914A8C14D1}|{CF1BE1F1-9CA4-4F80-B5B3-C65624E42D1A}|{D2CDFA7C-FA7C-440A-A7E3-80A087E734A2}
+----field----
+field: {BD8C016C-3C92-4F11-9822-5EE995016427}
+name: Include Children
+key: include children
+content-length: 1
+
+1
+----field----
+field: {58E3A117-68BB-4193-837B-2CC40A72E940}
+name: Enabled
+key: enabled
+content-length: 1
+
+1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170627T142258Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+40022048-55a7-436a-bb57-25fef376ed5d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170707T151333Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

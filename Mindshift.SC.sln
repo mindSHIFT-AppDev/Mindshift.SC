@@ -51,6 +51,12 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AutoPublish.Co
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AutoPublish.Master", "Mindshift.SC.AutoPublish.Master\Mindshift.SC.AutoPublish.Master.scproj", "{272DF9AE-4304-495E-9A90-DAEB8293A689}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZipLogging", "ZipLogging", "{6B1217D9-330E-4363-9D0C-4CC738F987AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging", "Mindshift.SC.ZipLogging\Mindshift.SC.ZipLogging.csproj", "{99DBC2FF-7A23-44CA-B183-35B8324D39BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging.Web", "Mindshift.SC.ZipLogging.Web\Mindshift.SC.ZipLogging.Web.csproj", "{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +157,14 @@ Global
 		{272DF9AE-4304-495E-9A90-DAEB8293A689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{272DF9AE-4304-495E-9A90-DAEB8293A689}.Release|Any CPU.Build.0 = Release|Any CPU
 		{272DF9AE-4304-495E-9A90-DAEB8293A689}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{99DBC2FF-7A23-44CA-B183-35B8324D39BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99DBC2FF-7A23-44CA-B183-35B8324D39BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99DBC2FF-7A23-44CA-B183-35B8324D39BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99DBC2FF-7A23-44CA-B183-35B8324D39BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,9 +189,11 @@ Global
 		{7B7BB1E1-5F43-4F0C-A722-4A754C25035F} = {4A7B68B1-AC72-410B-833B-DA11FFE0EEEC}
 		{DB14E954-938B-4859-B2C2-A0C9CEB9E7E4} = {4A7B68B1-AC72-410B-833B-DA11FFE0EEEC}
 		{272DF9AE-4304-495E-9A90-DAEB8293A689} = {4A7B68B1-AC72-410B-833B-DA11FFE0EEEC}
+		{99DBC2FF-7A23-44CA-B183-35B8324D39BC} = {6B1217D9-330E-4363-9D0C-4CC738F987AA}
+		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64} = {6B1217D9-330E-4363-9D0C-4CC738F987AA}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 20
+		SccNumberOfProjects = 22
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://invi01-tfs2010:8080/tfs/defaultcollection
 		SccLocalPath0 = .
@@ -257,5 +273,13 @@ Global
 		SccProjectTopLevelParentUniqueName19 = Mindshift.SC.sln
 		SccProjectName19 = Mindshift.SC.AutoPublish.Master
 		SccLocalPath19 = Mindshift.SC.AutoPublish.Master
+		SccProjectUniqueName20 = Mindshift.SC.ZipLogging\\Mindshift.SC.ZipLogging.csproj
+		SccProjectTopLevelParentUniqueName20 = Mindshift.SC.sln
+		SccProjectName20 = Mindshift.SC.ZipLogging
+		SccLocalPath20 = Mindshift.SC.ZipLogging
+		SccProjectUniqueName21 = Mindshift.SC.ZipLogging.Web\\Mindshift.SC.ZipLogging.Web.csproj
+		SccProjectTopLevelParentUniqueName21 = Mindshift.SC.sln
+		SccProjectName21 = Mindshift.SC.ZipLogging.Web
+		SccLocalPath21 = Mindshift.SC.ZipLogging.Web
 	EndGlobalSection
 EndGlobal

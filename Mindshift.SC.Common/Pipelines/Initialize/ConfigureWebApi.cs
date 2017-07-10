@@ -9,7 +9,7 @@ namespace Mindshift.SC.Common.Pipelines.Initialize
     {
         public void Process(PipelineArgs args)
         {
-            GlobalConfiguration.Configure(config => config.MapHttpAttributeRoutes());
+            //GlobalConfiguration.Configure(config => config.MapHttpAttributeRoutes());
             GlobalConfiguration.Configure(ReplaceControllerSelector);
         }
 

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mindshift.SC.Common</RootNamespace>
     <AssemblyName>Mindshift.SC.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SccProjectName>SAK</SccProjectName>
@@ -43,14 +43,21 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\ExternalReferences\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ExternalReferences\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Logging, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalReferences\Sitecore.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\ExternalReferences\Sitecore.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Services.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Sitecore.Services.Core">
       <HintPath>..\ExternalReferences\Sitecore.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Services.Infrastructure">
@@ -78,9 +85,6 @@
     <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Optimization">
-      <HintPath>..\ExternalReferences\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
@@ -112,6 +116,59 @@
   <ItemGroup>
     <Compile Include="Commands\OpenDialogCommand.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
+    <Compile Include="HideDependent\Fields\DependentFieldHelper.cs" />
+    <Compile Include="HideDependent\Fields\TimeField.cs" />
+    <Compile Include="HideDependent\Fields\HideDependentCheckbox.cs" />
+    <Compile Include="HideDependent\Fields\HideDependentLookupEx.cs" />
+    <Compile Include="HideDependent\Fields\HideDependentValueLookupEx.cs" />
+    <Compile Include="HideDependent\Fields\IHideDependentField.cs" />
+    <Compile Include="HideDependent\Fields\InjectScripts.cs" />
+    <Compile Include="Mapper\Attributes\SitecoreFieldAttribute.cs" />
+    <Compile Include="Mapper\Base\BaseModel.cs" />
+    <Compile Include="Mapper\Base\BaseRenderingModel.cs" />
+    <Compile Include="Mapper\Fields\Base\BaseField.cs" />
+    <Compile Include="Mapper\Fields\Base\BaseRenderingField.cs" />
+    <Compile Include="Mapper\Fields\Link\GeneralLinkFld.cs" />
+    <Compile Include="Mapper\Fields\Link\LookupFld.cs" />
+    <Compile Include="Mapper\Fields\Link\LookupFldSimple.cs" />
+    <Compile Include="Mapper\Fields\List\ChecklistFld.cs" />
+    <Compile Include="Mapper\Fields\List\CheckListFldSimple.cs" />
+    <Compile Include="Mapper\Fields\List\DroplistFld.cs" />
+    <Compile Include="Mapper\Fields\List\DropListFldSimple.cs" />
+    <Compile Include="Mapper\Fields\List\GroupedDroplinkFld.cs" />
+    <Compile Include="Mapper\Fields\List\MultiListFld.cs" />
+    <Compile Include="Mapper\Fields\List\MultiListFldSimple.cs" />
+    <Compile Include="Mapper\Fields\List\TreeListFld.cs" />
+    <Compile Include="Mapper\Fields\List\TreeListFldSimple.cs" />
+    <Compile Include="Mapper\Fields\Rendering\ChkboxFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\DateTimeFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\ImgFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\IntFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\LinkFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\LinkFldSimple.cs" />
+    <Compile Include="Mapper\Fields\Rendering\ListFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\ListFldSimple.cs" />
+    <Compile Include="Mapper\Fields\Rendering\StringFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\TrListFld.cs" />
+    <Compile Include="Mapper\Fields\Rendering\TrListFldSimple.cs" />
+    <Compile Include="Mapper\Fields\Simple\CheckboxFld.cs" />
+    <Compile Include="Mapper\Fields\Simple\TimeFld.cs" />
+    <Compile Include="Mapper\Fields\Simple\DateFld.cs" />
+    <Compile Include="Mapper\Fields\Simple\FileFld.cs" />
+    <Compile Include="Mapper\Fields\Simple\ImageFld.cs" />
+    <Compile Include="Mapper\Fields\Simple\IntegerFld.cs" />
+    <Compile Include="Mapper\Fields\Simple\TextFld.cs" />
+    <Compile Include="Mapper\Fields\Template\Fields\CustomGeneralLink.cs" />
+    <Compile Include="Mapper\Helpers\BranchHooks.cs" />
+    <Compile Include="Mapper\Helpers\ErrorHandlersHelper.cs" />
+    <Compile Include="Mapper\Helpers\ExtensionMethods.cs" />
+    <Compile Include="Mapper\Helpers\GenericHelper.cs" />
+    <Compile Include="Mapper\Helpers\LinkHelper.cs" />
+    <Compile Include="Mapper\Helpers\ListHelper.cs" />
+    <Compile Include="Mapper\Helpers\TranslationFilter.cs" />
+    <Compile Include="Mapper\Helpers\XmlResult.cs" />
+    <Compile Include="Mapper\Items\ListMediaItem.cs" />
+    <Compile Include="Mapper\Items\MediaIncludeItem.cs" />
     <Compile Include="Pipelines\Initialize\ConfigureWebApi.cs" />
     <Compile Include="Pipelines\Initialize\CustomHttpControllerSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

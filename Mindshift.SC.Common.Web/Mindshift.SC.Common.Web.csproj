@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mindshift.SC.Common.Web</RootNamespace>
     <AssemblyName>Mindshift.SC.Common.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -88,9 +88,9 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -110,6 +110,8 @@
     <Content Include="App_Config\Include\xMindshift\xApiRoutes.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="sitecore modules\Mindshift\Icons\mindshift.ico" />
+    <Content Include="sitecore modules\Mindshift\Scripts\HideDependent.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="sitecore modules\Mindshift\Dialog\css\bootstrap-theme.min.css" />
@@ -140,6 +142,19 @@
       <Project>{ff3446d1-e209-4a3b-b4ab-8979b10b28bf}</Project>
       <Name>Mindshift.SC.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\xMindshift\HideDependent\ContentEditorScripts.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\xMindshift\HideDependent\HideDependentFields.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Mindshift Web.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

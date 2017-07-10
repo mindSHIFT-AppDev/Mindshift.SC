@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {DCF0FA9A-3EEE-44AE-94CE-41C8F0D4A981}
+database: master
+path: /sitecore/system/Modules/Mindshift SC/Auto Publish/Publish Schedules
+parent: {B3A2E22F-8C6A-4773-9D6B-162AE173B22B}
+name: Publish Schedules
+master: {00000000-0000-0000-0000-000000000000}
+template: {6BA484E6-419F-490D-9BE0-4D7F58459092}
+templatekey: Publish Schedule Folder
+created: 20170630T150428:636344318680670000
+
+----version----
+language: en
+version: 1
+revision: c183f975-81a0-4896-9cbe-e3e0d4a6b08f
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170630T150428Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c183f975-81a0-4896-9cbe-e3e0d4a6b08f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170630T150428Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

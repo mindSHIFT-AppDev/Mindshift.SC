@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {D473324D-B353-4E89-AF21-76AEF15DBC89}
+database: master
+path: /sitecore/system/Modules/Mindshift SC/Auto Publish/Enumerations/Days/Thursday
+parent: {EF385659-83AE-46C2-991C-9CC63E2F0387}
+name: Thursday
+master: {00000000-0000-0000-0000-000000000000}
+template: {D256CE5B-486C-4D69-BC9B-0803619BE54E}
+templatekey: Enumeration
+created: 20170706T181334:636349616141830000
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+550
+----version----
+language: en
+version: 1
+revision: 3a028122-99b5-4b11-8b0d-a23f54978fb1
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170706T181334Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3a028122-99b5-4b11-8b0d-a23f54978fb1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170706T181405Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

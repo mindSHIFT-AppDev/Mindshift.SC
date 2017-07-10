@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {706E9B26-7E69-40BD-A6AF-E39ACC1E90B6}
+database: master
+path: /sitecore/system/Modules/Mindshift SC/Auto Publish/Enumerations/Frequencies/Hourly
+parent: {2C995D98-793A-429F-AF97-7B776D33119A}
+name: Hourly
+master: {00000000-0000-0000-0000-000000000000}
+template: {D256CE5B-486C-4D69-BC9B-0803619BE54E}
+templatekey: Enumeration
+created: 20170630T151932:636344327720100000
+
+----version----
+language: en
+version: 1
+revision: 76bffa74-5a3c-4237-918b-d736571ae5c4
+
+----field----
+field: {A5650A80-897D-458B-A0D2-24C104D2E512}
+name: Value
+key: value
+content-length: 0
+
+
+----field----
+field: {DD256596-9680-445D-87CB-DB9250131EBE}
+name: Fields To Hide
+key: fields to hide
+content-length: 194
+
+{BA666A02-A715-409B-AED0-D8EC789038B7}|{77BCEA92-B929-4733-BBA9-BC888F48BC63}|{0B5F0F37-D84F-4C91-AD93-524B7607682C}|{6300FF06-541A-40E4-868F-47EAE97E82CE}|{BADE2845-0A05-4532-B3A8-929B131EB0B6}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170630T151932Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+76bffa74-5a3c-4237-918b-d736571ae5c4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170706T190311Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

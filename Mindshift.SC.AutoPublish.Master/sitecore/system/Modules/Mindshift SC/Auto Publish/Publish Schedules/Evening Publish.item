@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {EA6724D0-2284-48EA-AA55-9B5D0B650676}
+database: master
+path: /sitecore/system/Modules/Mindshift SC/Auto Publish/Publish Schedules/Evening Publish
+parent: {DCF0FA9A-3EEE-44AE-94CE-41C8F0D4A981}
+name: Evening Publish
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C6A52B1-648C-4AFC-9553-7F5079CEFCCB}
+templatekey: Publish Schedule
+created: 20170630T152200:636344329206930000
+
+----version----
+language: en
+version: 1
+revision: 1b948494-3a3a-490f-b254-579e16c6c3f6
+
+----field----
+field: {4EF9B3C4-CA5D-4637-9071-F7C7490FAA31}
+name: Schedule Start Date
+key: schedule start date
+content-length: 16
+
+20170630T230000Z
+----field----
+field: {9353087C-0C8D-4881-B745-B4DF861BBAB1}
+name: Root Path
+key: root path
+content-length: 38
+
+{34531778-53E3-4ACF-BCEC-9F97C62DCBBC}
+----field----
+field: {BD8C016C-3C92-4F11-9822-5EE995016427}
+name: Include Children
+key: include children
+content-length: 1
+
+1
+----field----
+field: {B9F255C8-D2E6-4BE1-BC65-232BB08301DB}
+name: Publishing Target
+key: publishing target
+content-length: 38
+
+{8E080626-DDC3-4EF4-A1D1-F0BE4A200254}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170630T152200Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1b948494-3a3a-490f-b254-579e16c6c3f6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170630T152223Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
