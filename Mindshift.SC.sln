@@ -57,6 +57,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging.Web", "Mindshift.SC.ZipLogging.Web\Mindshift.SC.ZipLogging.Web.csproj", "{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Tools", "Build Tools", "{BC9D3D99-8880-4398-A478-220D7451ECB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeModulePackage", "MergeModulePackage\MergeModulePackage.csproj", "{FE7DCB15-A2C6-4920-89D5-82D5D3D2E3A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,10 @@ Global
 		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7DCB15-A2C6-4920-89D5-82D5D3D2E3A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7DCB15-A2C6-4920-89D5-82D5D3D2E3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7DCB15-A2C6-4920-89D5-82D5D3D2E3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7DCB15-A2C6-4920-89D5-82D5D3D2E3A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,9 +199,11 @@ Global
 		{272DF9AE-4304-495E-9A90-DAEB8293A689} = {4A7B68B1-AC72-410B-833B-DA11FFE0EEEC}
 		{99DBC2FF-7A23-44CA-B183-35B8324D39BC} = {6B1217D9-330E-4363-9D0C-4CC738F987AA}
 		{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64} = {6B1217D9-330E-4363-9D0C-4CC738F987AA}
+		{BC9D3D99-8880-4398-A478-220D7451ECB6} = {7711AC7E-0018-49F3-BF03-964DDA6B278E}
+		{FE7DCB15-A2C6-4920-89D5-82D5D3D2E3A1} = {BC9D3D99-8880-4398-A478-220D7451ECB6}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 22
+		SccNumberOfProjects = 23
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://invi01-tfs2010:8080/tfs/defaultcollection
 		SccLocalPath0 = .
@@ -281,5 +291,9 @@ Global
 		SccProjectTopLevelParentUniqueName21 = Mindshift.SC.sln
 		SccProjectName21 = Mindshift.SC.ZipLogging.Web
 		SccLocalPath21 = Mindshift.SC.ZipLogging.Web
+		SccProjectUniqueName22 = MergeModulePackage\\MergeModulePackage.csproj
+		SccProjectTopLevelParentUniqueName22 = Mindshift.SC.sln
+		SccProjectName22 = MergeModulePackage
+		SccLocalPath22 = MergeModulePackage
 	EndGlobalSection
 EndGlobal

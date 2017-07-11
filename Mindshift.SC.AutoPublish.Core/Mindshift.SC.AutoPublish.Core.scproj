@@ -37,6 +37,16 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Mindshift.SC.AutoPublish.Core</PackageName>
+    <PackageAuthor>Mindshift Technologies</PackageAuthor>
+    <PackagePublisher>Mindshift Technologies</PackagePublisher>
+    <PackageVersion>1</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

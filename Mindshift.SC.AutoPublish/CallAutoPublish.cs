@@ -66,7 +66,7 @@ namespace Mindshift.SC.AutoPublish {
 
 				} else { // we just updated one schedule, so just update that one shedule.
 					var scheduleId = scheduleItem.ID.ToString();
-					LogHelper.Info("Reloading Shedule: " + scheduleItem.Name + "(id:" + scheduleId + ")");
+					LogHelper.Info("Reloading Shedule: " + scheduleItem.Name + " (id:" + scheduleId + ")");
 					if (publishSchedules.ContainsKey(scheduleId)) {
 						publishSchedules[scheduleId].Stop();
 						publishSchedules[scheduleId] = new Publish_Schedule(scheduleItem);

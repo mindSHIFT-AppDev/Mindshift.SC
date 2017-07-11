@@ -26,7 +26,7 @@
     <SccLocalPath>SAK</SccLocalPath>
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
-    <AssemblyStatus>Exclude</AssemblyStatus>
+    <AssemblyStatus>Include</AssemblyStatus>
     <EnableCodeGeneration>True</EnableCodeGeneration>
     <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
     <CodeGenTargetProject>Mindshift.SC.AutoPublish</CodeGenTargetProject>
@@ -39,11 +39,31 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Mindshift.SC.AutoPublish.Master</PackageName>
+    <PackageAuthor>Mindshift Technologies</PackageAuthor>
+    <PackagePublisher>Mindshift Technologies</PackagePublisher>
+    <PackageVersion>1</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Mindshift.SC.AutoPublish.Master</PackageName>
+    <PackageAuthor>Mindshift Technologies</PackageAuthor>
+    <PackagePublisher>Mindshift Technologies</PackagePublisher>
+    <PackageVersion>1</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -139,14 +159,6 @@
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Publish Schedules.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Publish Schedules\Evening Publish.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Publish Schedules\Friday Publish.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -251,6 +263,20 @@
     <CodeGenTemplate Include="Code Generation Templates\mindshift.tt" />
     <CodeGenTemplate Include="Code Generation Templates\mindshiftheader.tt" />
     <CodeGenTemplate Include="Code Generation Templates\stringextensions.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\Mindshift.SC.AutoPublish.Core\Mindshift.SC.AutoPublish.Core.scproj">
+      <ProjectId>{db14e954-938b-4859-b2c2-a0c9ceb9e7e4}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\Mindshift.SC.Common.TDS.Core\Mindshift.SC.Common.TDS.Core.scproj">
+      <ProjectId>{31dfcf1c-8be9-4d58-bdd0-31d78eb7d78a}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\Mindshift.SC.Common.TDS.Master\Mindshift.SC.Common.TDS.Master.scproj">
+      <ProjectId>{e5034b0f-db6e-404e-a070-eedddcf8b130}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ExcludedAssemblies Include="Mindshift.SC.%2a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

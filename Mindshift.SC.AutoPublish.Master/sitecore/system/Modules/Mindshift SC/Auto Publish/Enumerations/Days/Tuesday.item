@@ -8,7 +8,7 @@ name: Tuesday
 master: {00000000-0000-0000-0000-000000000000}
 template: {D256CE5B-486C-4D69-BC9B-0803619BE54E}
 templatekey: Enumeration
-created: 20170706T181323:636349616038470000
+created: 20170706T181323Z
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -20,8 +20,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: b52fbf8f-6331-4b31-8e27-d9a3c730123c
+revision: b7a7c1e8-a0f4-4bd0-83bf-3027b2032e69
 
+----field----
+field: {A5650A80-897D-458B-A0D2-24C104D2E512}
+name: Value
+key: value
+content-length: 1
+
+2
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b52fbf8f-6331-4b31-8e27-d9a3c730123c
+b7a7c1e8-a0f4-4bd0-83bf-3027b2032e69
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170706T181405Z
+20170707T172136Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

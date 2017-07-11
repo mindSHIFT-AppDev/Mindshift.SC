@@ -8,7 +8,7 @@ name: Hourly
 master: {00000000-0000-0000-0000-000000000000}
 template: {D256CE5B-486C-4D69-BC9B-0803619BE54E}
 templatekey: Enumeration
-created: 20170630T151932:636344327720100000
+created: 20170630T151932Z
 
 ----version----
 language: en
