@@ -47,6 +47,39 @@ namespace Mindshift.SC.AutoPublish {
 
 		}
 
+		
+		public void OnItemDeleted(object sender, EventArgs args) {
+
+
+			var eventArgs = args as SitecoreEventArgs;
+			Assert.IsNotNull(eventArgs, "eventArgs");
+			//Sitecore.Data.Items.Item item = eventArgs.Parameters[0] as Sitecore.Data.Items.Item;
+			Item item = Event.ExtractParameter(args, 0) as Item;
+			Assert.IsNotNull(item, "item");
+
+			// when any of the schedules are updated, let's re-create the thread.
+			if (item.TemplateName == "Publish Schedule") {
+				lock (Locker) { // local everything while we do this.
+					var scheduleId = item.ID.ToString();
+					LogHelper.Info("Deleting Shedule: " + item.Name + " (id:" + scheduleId + ")");
+					if (publishSchedules.ContainsKey(scheduleId)) {
+						publishSchedules[scheduleId].Stop();
+						publishSchedules.Remove(scheduleId);
+					}
+					LogHelper.Info("Schedule Deleted", item.Paths.FullPath);
+				}
+			}
+
+
+
+
+			//sendEmail(item, itemChanges);
+
+		}
+
+
+		
+
 		private void UpdateSchedule(Item scheduleItem = null) {
 			LogHelper.Info("Schedule Update Started");
 			lock (Locker) { // local everything while we do this.
@@ -70,8 +103,10 @@ namespace Mindshift.SC.AutoPublish {
 					if (publishSchedules.ContainsKey(scheduleId)) {
 						publishSchedules[scheduleId].Stop();
 						publishSchedules[scheduleId] = new Publish_Schedule(scheduleItem);
-						publishSchedules[scheduleId].Start();
+					} else {
+						publishSchedules.Add(scheduleId, new Publish_Schedule(scheduleItem));
 					}
+					publishSchedules[scheduleId].Start();
 				}
 				LogHelper.Info("Schedule Update Ended");
 			}
