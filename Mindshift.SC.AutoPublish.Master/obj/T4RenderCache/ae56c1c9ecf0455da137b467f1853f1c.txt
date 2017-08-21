@@ -1,0 +1,93 @@
+//Revision: 33a87b2b-52c9-4b47-be31-d23fde9c608d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace Mindshift.SC.AutoPublish
+{
+    
+    /// <summary>
+	/// IAuto_Publish_Folder Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Mindshift SC/Auto Publish/Auto Publish Folder</para>	
+	/// <para>ID: ae56c1c9-ecf0-455d-a137-b467f1853f1c</para>	
+	/// </summary>
+	public partial interface IAuto_Publish_Folder 
+	{
+			    }
+
+	/// <summary>
+	/// Auto_Publish_Folder
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Mindshift SC/Auto Publish/Auto Publish Folder</para>	
+	/// <para>ID: ae56c1c9-ecf0-455d-a137-b467f1853f1c</para>	
+	/// </summary>
+	public partial class Auto_Publish_Folder : BaseModel, IRenderingModel,IAuto_Publish_Folder
+	{
+
+                /// <summary>
+		/// [Deprecated]
+        /// The Template ID for /sitecore/templates/Mindshift SC/Auto Publish/Auto Publish Folder as string
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static readonly string TemplateId = "ae56c1c9-ecf0-455d-a137-b467f1853f1c";
+
+        /// <summary>
+		/// The Template ID for /sitecore/templates/Mindshift SC/Auto Publish/Auto Publish Folder as ID
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static readonly ID TemplateID = new ID("ae56c1c9-ecf0-455d-a137-b467f1853f1c");
+
+        public void Initialize(Rendering rendering)
+        {
+            InnerItem = rendering.Item;
+        }
+
+        /// <summary>
+		/// Constructor with with Item passed in
+        /// USE THIS CONSTRUCTOR FOR MANUAL INSTANTIATION
+		/// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public Auto_Publish_Folder(Item innerItem)
+		{
+         	InnerItem = innerItem;
+		}
+
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static implicit operator Auto_Publish_Folder(Item innerItem)
+		{
+			return innerItem != null ? new Auto_Publish_Folder(innerItem) : null;
+		} 
+	   
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static implicit operator Item(Auto_Publish_Folder templateItem)
+		{
+			return templateItem != null ? templateItem.InnerItem : null;
+		}
+                /// <summary>
+		/// Empty Constructor used by Sitecore Controller
+        /// DO NOT ENVOKE MANUALLY
+		/// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public Auto_Publish_Folder()
+		{
+         	
+		}
+	   
+			
+	}
+}
+
+

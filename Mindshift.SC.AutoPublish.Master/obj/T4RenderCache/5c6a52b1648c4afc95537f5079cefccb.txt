@@ -1,0 +1,379 @@
+//Revision: 169dbadc-d941-4374-8aff-32f7aea85290
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+namespace Mindshift.SC.AutoPublish
+{
+    
+    /// <summary>
+	/// IPublish_Schedule Interface
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Mindshift SC/Auto Publish/Publish Schedule</para>	
+	/// <para>ID: 5c6a52b1-648c-4afc-9553-7f5079cefccb</para>	
+	/// </summary>
+	public partial interface IPublish_Schedule 
+	{
+								/// <summary>
+					/// The Day of the Month field.
+					/// <para></para>
+					/// <para>Field Type: Number</para>		
+					/// <para>Field ID: 6300ff06-541a-40e4-868f-47eae97e82ce</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("6300ff06-541a-40e4-868f-47eae97e82ce")]
+                    					IntegerFld Day_Of_The_Month  {get; }
+                    			
+								/// <summary>
+					/// The Day of the Week field.
+					/// <para></para>
+					/// <para>Field Type: Droplink</para>		
+					/// <para>Field ID: 0b5f0f37-d84f-4c91-ad93-524b7607682c</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("0b5f0f37-d84f-4c91-ad93-524b7607682c")]
+                    					LookupFld Day_Of_The_Week  {get; }
+                    			
+								/// <summary>
+					/// The Days of the Week field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: ba666a02-a715-409b-aed0-d8ec789038b7</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("ba666a02-a715-409b-aed0-d8ec789038b7")]
+                    					MultiListFld Days_Of_The_Weeks  {get; }
+                    			
+								/// <summary>
+					/// The Enabled field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: 58e3a117-68bb-4193-837b-2cc40a72e940</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("58e3a117-68bb-4193-837b-2cc40a72e940")]
+                    					CheckBoxFld Enabled  {get; }
+                    			
+								/// <summary>
+					/// The Frequency field.
+					/// <para></para>
+					/// <para>Field Type: Hide Dependent Droplink</para>		
+					/// <para>Field ID: 3f97d2ae-5c82-4d54-9057-5279a18b04e8</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("3f97d2ae-5c82-4d54-9057-5279a18b04e8")]
+                    					LookupFld Frequency  {get; }
+                    			
+								/// <summary>
+					/// The Include Children field.
+					/// <para></para>
+					/// <para>Field Type: Checkbox</para>		
+					/// <para>Field ID: bd8c016c-3c92-4f11-9822-5ee995016427</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("bd8c016c-3c92-4f11-9822-5ee995016427")]
+                    					CheckBoxFld Include_Children  {get; }
+                    			
+								/// <summary>
+					/// The Languages field.
+					/// <para>blank means all</para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: f47bd516-e96b-40b2-9c5c-687d3a4fed8e</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("f47bd516-e96b-40b2-9c5c-687d3a4fed8e")]
+                    					MultiListFld Languages  {get; }
+                    			
+								/// <summary>
+					/// The Publishing Targets field.
+					/// <para></para>
+					/// <para>Field Type: Multilist</para>		
+					/// <para>Field ID: b9f255c8-d2e6-4be1-bc65-232bb08301db</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("b9f255c8-d2e6-4be1-bc65-232bb08301db")]
+                    					MultiListFld Publishing_Targets  {get; }
+                    			
+								/// <summary>
+					/// The Root Path field.
+					/// <para></para>
+					/// <para>Field Type: Droptree</para>		
+					/// <para>Field ID: 9353087c-0c8d-4881-b745-b4df861bbab1</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("9353087c-0c8d-4881-b745-b4df861bbab1")]
+                    					LookupFld Root_Path  {get; }
+                    			
+								/// <summary>
+					/// The Schedule End Date field.
+					/// <para></para>
+					/// <para>Field Type: Datetime</para>		
+					/// <para>Field ID: 90565d3c-9787-427e-aed1-6b10cc0c844f</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("90565d3c-9787-427e-aed1-6b10cc0c844f")]
+                    					DateFld Schedule_End_Date  {get; }
+                    			
+								/// <summary>
+					/// The Schedule Start Date field.
+					/// <para></para>
+					/// <para>Field Type: Datetime</para>		
+					/// <para>Field ID: 4ef9b3c4-ca5d-4637-9071-f7c7490faa31</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("4ef9b3c4-ca5d-4637-9071-f7c7490faa31")]
+                    					DateFld Schedule_Start_Date  {get; }
+                    			
+								/// <summary>
+					/// The Specific Date and Time field.
+					/// <para></para>
+					/// <para>Field Type: Datetime</para>		
+					/// <para>Field ID: bade2845-0a05-4532-b3a8-929b131eb0b6</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("bade2845-0a05-4532-b3a8-929b131eb0b6")]
+                    					DateFld Specific_Date_And_Time  {get; }
+                    			
+								/// <summary>
+					/// The Time of the Day field.
+					/// <para></para>
+					/// <para>Field Type: Time</para>		
+					/// <para>Field ID: 77bcea92-b929-4733-bba9-bc888f48bc63</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("77bcea92-b929-4733-bba9-bc888f48bc63")]
+                    					TimeFld Time_Of_The_Day  {get; }
+                    			
+			    }
+
+	/// <summary>
+	/// Publish_Schedule
+	/// <para></para>
+	/// <para>Path: /sitecore/templates/Mindshift SC/Auto Publish/Publish Schedule</para>	
+	/// <para>ID: 5c6a52b1-648c-4afc-9553-7f5079cefccb</para>	
+	/// </summary>
+	public partial class Publish_Schedule : BaseModel, IRenderingModel,IPublish_Schedule
+	{
+
+                /// <summary>
+		/// [Deprecated]
+        /// The Template ID for /sitecore/templates/Mindshift SC/Auto Publish/Publish Schedule as string
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static readonly string TemplateId = "5c6a52b1-648c-4afc-9553-7f5079cefccb";
+
+        /// <summary>
+		/// The Template ID for /sitecore/templates/Mindshift SC/Auto Publish/Publish Schedule as ID
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static readonly ID TemplateID = new ID("5c6a52b1-648c-4afc-9553-7f5079cefccb");
+
+        public void Initialize(Rendering rendering)
+        {
+            InnerItem = rendering.Item;
+        }
+
+        /// <summary>
+		/// Constructor with with Item passed in
+        /// USE THIS CONSTRUCTOR FOR MANUAL INSTANTIATION
+		/// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public Publish_Schedule(Item innerItem)
+		{
+         	InnerItem = innerItem;
+		}
+
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static implicit operator Publish_Schedule(Item innerItem)
+		{
+			return innerItem != null ? new Publish_Schedule(innerItem) : null;
+		} 
+	   
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public static implicit operator Item(Publish_Schedule templateItem)
+		{
+			return templateItem != null ? templateItem.InnerItem : null;
+		}
+                /// <summary>
+		/// Empty Constructor used by Sitecore Controller
+        /// DO NOT ENVOKE MANUALLY
+		/// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+		public Publish_Schedule()
+		{
+         	
+		}
+	   
+		
+				/// <summary>
+				/// The Day of the Month field.
+				/// <para>Field Type: Number</para>		
+				/// <para>Field ID: 6300ff06-541a-40e4-868f-47eae97e82ce</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("6300ff06-541a-40e4-868f-47eae97e82ce")]
+                				public virtual IntegerFld Day_Of_The_Month  {get { return new IntegerFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("6300ff06-541a-40e4-868f-47eae97e82ce")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Day of the Week field.
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: 0b5f0f37-d84f-4c91-ad93-524b7607682c</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("0b5f0f37-d84f-4c91-ad93-524b7607682c")]
+                				public virtual LookupFld Day_Of_The_Week  {get { return new LookupFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("0b5f0f37-d84f-4c91-ad93-524b7607682c")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Days of the Week field.
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: ba666a02-a715-409b-aed0-d8ec789038b7</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("ba666a02-a715-409b-aed0-d8ec789038b7")]
+                				public virtual MultiListFld Days_Of_The_Weeks  {get { return new MultiListFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("ba666a02-a715-409b-aed0-d8ec789038b7")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Enabled field.
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: 58e3a117-68bb-4193-837b-2cc40a72e940</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("58e3a117-68bb-4193-837b-2cc40a72e940")]
+                				public virtual CheckBoxFld Enabled  {get { return new CheckBoxFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("58e3a117-68bb-4193-837b-2cc40a72e940")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Frequency field.
+				/// <para>Field Type: Hide Dependent Droplink</para>		
+				/// <para>Field ID: 3f97d2ae-5c82-4d54-9057-5279a18b04e8</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("3f97d2ae-5c82-4d54-9057-5279a18b04e8")]
+                				public virtual LookupFld Frequency  {get { return new LookupFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("3f97d2ae-5c82-4d54-9057-5279a18b04e8")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Include Children field.
+				/// <para>Field Type: Checkbox</para>		
+				/// <para>Field ID: bd8c016c-3c92-4f11-9822-5ee995016427</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("bd8c016c-3c92-4f11-9822-5ee995016427")]
+                				public virtual CheckBoxFld Include_Children  {get { return new CheckBoxFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("bd8c016c-3c92-4f11-9822-5ee995016427")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Languages field.
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: f47bd516-e96b-40b2-9c5c-687d3a4fed8e</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("f47bd516-e96b-40b2-9c5c-687d3a4fed8e")]
+                				public virtual MultiListFld Languages  {get { return new MultiListFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("f47bd516-e96b-40b2-9c5c-687d3a4fed8e")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Publishing Targets field.
+				/// <para>Field Type: Multilist</para>		
+				/// <para>Field ID: b9f255c8-d2e6-4be1-bc65-232bb08301db</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("b9f255c8-d2e6-4be1-bc65-232bb08301db")]
+                				public virtual MultiListFld Publishing_Targets  {get { return new MultiListFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("b9f255c8-d2e6-4be1-bc65-232bb08301db")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Root Path field.
+				/// <para>Field Type: Droptree</para>		
+				/// <para>Field ID: 9353087c-0c8d-4881-b745-b4df861bbab1</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("9353087c-0c8d-4881-b745-b4df861bbab1")]
+                				public virtual LookupFld Root_Path  {get { return new LookupFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("9353087c-0c8d-4881-b745-b4df861bbab1")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Schedule End Date field.
+				/// <para>Field Type: Datetime</para>		
+				/// <para>Field ID: 90565d3c-9787-427e-aed1-6b10cc0c844f</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("90565d3c-9787-427e-aed1-6b10cc0c844f")]
+                				public virtual DateFld Schedule_End_Date  {get { return new DateFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("90565d3c-9787-427e-aed1-6b10cc0c844f")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Schedule Start Date field.
+				/// <para>Field Type: Datetime</para>		
+				/// <para>Field ID: 4ef9b3c4-ca5d-4637-9071-f7c7490faa31</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("4ef9b3c4-ca5d-4637-9071-f7c7490faa31")]
+                				public virtual DateFld Schedule_Start_Date  {get { return new DateFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("4ef9b3c4-ca5d-4637-9071-f7c7490faa31")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Specific Date and Time field.
+				/// <para>Field Type: Datetime</para>		
+				/// <para>Field ID: bade2845-0a05-4532-b3a8-929b131eb0b6</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("bade2845-0a05-4532-b3a8-929b131eb0b6")]
+                				public virtual DateFld Specific_Date_And_Time  {get { return new DateFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("bade2845-0a05-4532-b3a8-929b131eb0b6")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Time of the Day field.
+				/// <para>Field Type: Time</para>		
+				/// <para>Field ID: 77bcea92-b929-4733-bba9-bc888f48bc63</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("77bcea92-b929-4733-bba9-bc888f48bc63")]
+                				public virtual TimeFld Time_Of_The_Day  {get { return new TimeFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("77bcea92-b929-4733-bba9-bc888f48bc63")] : null)); } }
+                
+					
+			
+	}
+}
+
+
