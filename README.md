@@ -25,22 +25,27 @@ These projects contain items, classes and files that are shared between all modu
 
 ### AutoPublish
 Status: Complete and working.
+
 Description: This module gives you the ability to schedule publish times via configuration items under System/Modules.
 
 ### AdoLogging
 Status: Complete but haven't tested it in a while.
+
 Description: Logs log4net data into a custom database. Uses the ASR to report on that data.
 
 ### Dynamic Placeholders
 Status: Needs to be verified
+
 Description: Most of the the dynamic placeholder code itself came from somewhere else. This project is actually concerned with making a custom dialog that can be used as a replacement for the Presentation Details dialog in Sitecore, but supports the Dynamic Placeholders. It shows the placeholders and renderings in a tree format! The original code is repeated here as a dependency for testing.
 
 ### TfsPackageDesigner
 Status: Idea only
+
 Description: The idea is to create a Sitecore package based on a TFS checkin.
 
 ### ZipLogging
 Status: Idea only
+
 Description: The idea is to allow log4net to log directly into a zip file. This will increase space as well as increase write speed.
 
 
