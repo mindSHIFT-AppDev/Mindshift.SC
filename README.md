@@ -52,7 +52,9 @@ Description: The idea is to allow log4net to log directly into a zip file. This 
 
 
 
+## Building
 
+Building the .TDS.Master project will create the update package for installing a module. This is only setup for the working modules above so far. When building during development you can also use the TDS Sync to Sitecore.
 
 
 
