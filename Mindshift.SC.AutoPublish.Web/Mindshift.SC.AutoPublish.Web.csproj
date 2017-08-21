@@ -82,6 +82,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Mindshift Web.pubxml" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mindshift.SC.AutoPublish\Mindshift.SC.AutoPublish.csproj">

@@ -1,0 +1,9 @@
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\obj\Debug\Mindshift.SC.ZipLogging.csprojResolveAssemblyReference.cache
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\bin\Debug\Mindshift.SC.ZipLogging.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\bin\Debug\Mindshift.SC.ZipLogging.pdb
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\bin\Debug\SharpCompress.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\bin\Debug\Sitecore.Kernel.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\bin\Debug\Sitecore.Logging.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\bin\Debug\Newtonsoft.Json.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\obj\Debug\Mindshift.SC.ZipLogging.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.ZipLogging\obj\Debug\Mindshift.SC.ZipLogging.pdb

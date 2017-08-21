@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ItemIconCache>
+  <Item ItemPath="/sitecore/system" ItemIcon="/temp/IconCache/People/16x16/workstation1.png" />
+  <Item ItemPath="/sitecore/templates" ItemIcon="/temp/IconCache/Applications/16x16/form_blue.png" />
+  <Item ItemPath="/sitecore/templates/Mindshift SC/Common/Enumeration" ItemIcon="/temp/IconCache/Applications/32x32/check.png" />
+  <Item ItemPath="/sitecore/templates/Mindshift SC/Common/Enumeration Folder" ItemIcon="/temp/IconCache/Applications/32x32/folder_ok.png" />
+  <Item ItemPath="/sitecore/templates/Mindshift SC/Common/Mindshift SC Folder" ItemIcon="/sitecore%20modules/mindshift/icons/mindshift.ico" />
+</ItemIconCache>

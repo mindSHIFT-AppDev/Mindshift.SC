@@ -1,0 +1,6 @@
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.TDS.Master\bin\Debug\sitecore modules\Mindshift\Dialog\css\tfspackagedesigner.css
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.TDS.Master\bin\Debug\sitecore modules\Mindshift\Dialog\html\tfspackagedesigner.html
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.TDS.Master\bin\Debug\sitecore modules\Mindshift\Dialog\js\tfspackagedesigner.js
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.TDS.Master\bin\Debug\App_Config\Include\xMindshift\xTfsPackageDesigner.config
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.TDS.Master\bin\Debug\bin\Mindshift.SC.TfsPackageDesigner.Web.dll
+C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.TDS.Master\bin\Debug\bin\Mindshift.SC.TfsPackageDesigner.Web.pdb
