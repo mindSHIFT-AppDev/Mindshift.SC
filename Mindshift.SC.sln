@@ -3,59 +3,59 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.Common.Web", "Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj", "{8E317E03-22C8-452B-9AB4-416A05FE6399}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.Common.Web", "Common\Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj", "{8E317E03-22C8-452B-9AB4-416A05FE6399}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7711AC7E-0018-49F3-BF03-964DDA6B278E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.Common", "Mindshift.SC.Common\Mindshift.SC.Common.csproj", "{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.Common", "Common\Mindshift.SC.Common\Mindshift.SC.Common.csproj", "{FF3446D1-E209-4A3B-B4AB-8979B10B28BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicPlaceholders", "DynamicPlaceholders", "{7DF94942-8DFA-4693-BA07-4EFD6C1FBEF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.DynamicPlaceholders", "Mindshift.SC.DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders.csproj", "{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.DynamicPlaceholders", "DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders.csproj", "{81DEDE95-4D32-47CC-8247-10CC5CE1B4A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.DynamicPlaceholders.Web", "Mindshift.SC.DynamicPlaceholders.Web\Mindshift.SC.DynamicPlaceholders.Web.csproj", "{3F2EC967-3F5A-449C-A980-9A5E7B38482A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.DynamicPlaceholders.Web", "DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders.Web\Mindshift.SC.DynamicPlaceholders.Web.csproj", "{3F2EC967-3F5A-449C-A980-9A5E7B38482A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdoLogging", "AdoLogging", "{1085C010-F335-4D95-8391-FF77A606A3C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AdoLogging.Web", "Mindshift.SC.AdoLogging.Web\Mindshift.SC.AdoLogging.Web.csproj", "{112F1DCD-4477-45F7-BEB6-272882CE93B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AdoLogging.Web", "AdoLogging\Mindshift.SC.AdoLogging.Web\Mindshift.SC.AdoLogging.Web.csproj", "{112F1DCD-4477-45F7-BEB6-272882CE93B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AdoLogging", "Mindshift.SC.AdoLogging\Mindshift.SC.AdoLogging.csproj", "{B57EB853-7317-4A92-B211-57108C0C837F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AdoLogging", "AdoLogging\Mindshift.SC.AdoLogging\Mindshift.SC.AdoLogging.csproj", "{B57EB853-7317-4A92-B211-57108C0C837F}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.Common.TDS.Master", "Mindshift.SC.Common.TDS.Master\Mindshift.SC.Common.TDS.Master.scproj", "{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.Common.TDS.Master", "Common\Mindshift.SC.Common.TDS.Master\Mindshift.SC.Common.TDS.Master.scproj", "{E5034B0F-DB6E-404E-A070-EEDDDCF8B130}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.Common.TDS.Core", "Mindshift.SC.Common.TDS.Core\Mindshift.SC.Common.TDS.Core.scproj", "{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.Common.TDS.Core", "Common\Mindshift.SC.Common.TDS.Core\Mindshift.SC.Common.TDS.Core.scproj", "{31DFCF1C-8BE9-4D58-BDD0-31D78EB7D78A}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AdoLogging.TDS.Core", "Mindshift.SC.AdoLogging.TDS.Core\Mindshift.SC.AdoLogging.TDS.Core.scproj", "{6022A104-0D1E-45D1-9419-7626D4DDF862}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AdoLogging.TDS.Core", "AdoLogging\Mindshift.SC.AdoLogging.TDS.Core\Mindshift.SC.AdoLogging.TDS.Core.scproj", "{6022A104-0D1E-45D1-9419-7626D4DDF862}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AdoLogging.TDS.Master", "Mindshift.SC.AdoLogging.TDS.Master\Mindshift.SC.AdoLogging.TDS.Master.scproj", "{F68047E7-7BAE-4072-837D-891D8977D1B6}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AdoLogging.TDS.Master", "AdoLogging\Mindshift.SC.AdoLogging.TDS.Master\Mindshift.SC.AdoLogging.TDS.Master.scproj", "{F68047E7-7BAE-4072-837D-891D8977D1B6}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.DynamicPlaceholders.TDS.Core", "Mindshift.SC.DynamicPlaceholders.TDS.Core\Mindshift.SC.DynamicPlaceholders.TDS.Core.scproj", "{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.DynamicPlaceholders.TDS.Core", "DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders.TDS.Core\Mindshift.SC.DynamicPlaceholders.TDS.Core.scproj", "{A2C2C6AC-0EBB-4309-B3E5-5441FF4E3387}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.DynamicPlaceholders.TDS.Master", "Mindshift.SC.DynamicPlaceholders.TDS.Master\Mindshift.SC.DynamicPlaceholders.TDS.Master.scproj", "{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.DynamicPlaceholders.TDS.Master", "DynamicPlaceholders\Mindshift.SC.DynamicPlaceholders.TDS.Master\Mindshift.SC.DynamicPlaceholders.TDS.Master.scproj", "{B55A36EC-4C7B-49DD-A037-80DEBDC734C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TfsPackageDesigner", "TfsPackageDesigner", "{44646FB0-BD7B-4932-913F-6B30D426A386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.TfsPackageDesigner", "Mindshift.SC.TfsPackageDesigner\Mindshift.SC.TfsPackageDesigner.csproj", "{C57D73DE-BB69-4604-9E1C-F94DE9A05241}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.TfsPackageDesigner", "TfsPackageDesigner\Mindshift.SC.TfsPackageDesigner\Mindshift.SC.TfsPackageDesigner.csproj", "{C57D73DE-BB69-4604-9E1C-F94DE9A05241}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.TfsPackageDesigner.Web", "Mindshift.SC.TfsPackageDesigner.Web\Mindshift.SC.TfsPackageDesigner.Web.csproj", "{FEC5E915-2068-4202-B095-63B953F816CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.TfsPackageDesigner.Web", "TfsPackageDesigner\Mindshift.SC.TfsPackageDesigner.Web\Mindshift.SC.TfsPackageDesigner.Web.csproj", "{FEC5E915-2068-4202-B095-63B953F816CB}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.TfsPackageDesigner.TDS.Master", "Mindshift.SC.TfsPackageDesigner.TDS.Master\Mindshift.SC.TfsPackageDesigner.TDS.Master.scproj", "{B850BAAC-1E86-40EB-A961-ABD074089A34}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.TfsPackageDesigner.TDS.Master", "TfsPackageDesigner\Mindshift.SC.TfsPackageDesigner.TDS.Master\Mindshift.SC.TfsPackageDesigner.TDS.Master.scproj", "{B850BAAC-1E86-40EB-A961-ABD074089A34}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoPublish", "AutoPublish", "{4A7B68B1-AC72-410B-833B-DA11FFE0EEEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AutoPublish", "Mindshift.SC.AutoPublish\Mindshift.SC.AutoPublish.csproj", "{4C102710-A75F-4832-86CC-5BB589C49742}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AutoPublish", "AutoPublish\Mindshift.SC.AutoPublish\Mindshift.SC.AutoPublish.csproj", "{4C102710-A75F-4832-86CC-5BB589C49742}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AutoPublish.Web", "Mindshift.SC.AutoPublish.Web\Mindshift.SC.AutoPublish.Web.csproj", "{7B7BB1E1-5F43-4F0C-A722-4A754C25035F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.AutoPublish.Web", "AutoPublish\Mindshift.SC.AutoPublish.Web\Mindshift.SC.AutoPublish.Web.csproj", "{7B7BB1E1-5F43-4F0C-A722-4A754C25035F}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AutoPublish.Core", "Mindshift.SC.AutoPublish.Core\Mindshift.SC.AutoPublish.Core.scproj", "{DB14E954-938B-4859-B2C2-A0C9CEB9E7E4}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AutoPublish.Core", "AutoPublish\Mindshift.SC.AutoPublish.Core\Mindshift.SC.AutoPublish.Core.scproj", "{DB14E954-938B-4859-B2C2-A0C9CEB9E7E4}"
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AutoPublish.Master", "Mindshift.SC.AutoPublish.Master\Mindshift.SC.AutoPublish.Master.scproj", "{272DF9AE-4304-495E-9A90-DAEB8293A689}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Mindshift.SC.AutoPublish.Master", "AutoPublish\Mindshift.SC.AutoPublish.Master\Mindshift.SC.AutoPublish.Master.scproj", "{272DF9AE-4304-495E-9A90-DAEB8293A689}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ZipLogging", "ZipLogging", "{6B1217D9-330E-4363-9D0C-4CC738F987AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging", "Mindshift.SC.ZipLogging\Mindshift.SC.ZipLogging.csproj", "{99DBC2FF-7A23-44CA-B183-35B8324D39BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging", "ZipLogging\Mindshift.SC.ZipLogging\Mindshift.SC.ZipLogging.csproj", "{99DBC2FF-7A23-44CA-B183-35B8324D39BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging.Web", "Mindshift.SC.ZipLogging.Web\Mindshift.SC.ZipLogging.Web.csproj", "{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindshift.SC.ZipLogging.Web", "ZipLogging\Mindshift.SC.ZipLogging.Web\Mindshift.SC.ZipLogging.Web.csproj", "{75FC9FD3-E9D8-4D98-93BD-D27F4CB67D64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -197,87 +197,87 @@ Global
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = http://invi01-tfs2010:8080/tfs/defaultcollection
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = Mindshift.SC.AdoLogging.TDS.Core\\Mindshift.SC.AdoLogging.TDS.Core.scproj
+		SccProjectUniqueName1 = AdoLogging\\Mindshift.SC.AdoLogging.TDS.Core\\Mindshift.SC.AdoLogging.TDS.Core.scproj
 		SccProjectTopLevelParentUniqueName1 = Mindshift.SC.sln
 		SccProjectName1 = Mindshift.SC.AdoLogging.TDS.Core
 		SccLocalPath1 = Mindshift.SC.AdoLogging.TDS.Core
-		SccProjectUniqueName2 = Mindshift.SC.AdoLogging.TDS.Master\\Mindshift.SC.AdoLogging.TDS.Master.scproj
+		SccProjectUniqueName2 = AdoLogging\\Mindshift.SC.AdoLogging.TDS.Master\\Mindshift.SC.AdoLogging.TDS.Master.scproj
 		SccProjectTopLevelParentUniqueName2 = Mindshift.SC.sln
 		SccProjectName2 = Mindshift.SC.AdoLogging.TDS.Master
 		SccLocalPath2 = Mindshift.SC.AdoLogging.TDS.Master
-		SccProjectUniqueName3 = Mindshift.SC.AdoLogging.Web\\Mindshift.SC.AdoLogging.Web.csproj
+		SccProjectUniqueName3 = AdoLogging\\Mindshift.SC.AdoLogging.Web\\Mindshift.SC.AdoLogging.Web.csproj
 		SccProjectTopLevelParentUniqueName3 = Mindshift.SC.sln
 		SccProjectName3 = Mindshift.SC.AdoLogging.Web
 		SccLocalPath3 = Mindshift.SC.AdoLogging.Web
-		SccProjectUniqueName4 = Mindshift.SC.AdoLogging\\Mindshift.SC.AdoLogging.csproj
+		SccProjectUniqueName4 = AdoLogging\\Mindshift.SC.AdoLogging\\Mindshift.SC.AdoLogging.csproj
 		SccProjectTopLevelParentUniqueName4 = Mindshift.SC.sln
 		SccProjectName4 = Mindshift.SC.AdoLogging
 		SccLocalPath4 = Mindshift.SC.AdoLogging
-		SccProjectUniqueName5 = Mindshift.SC.Common.TDS.Core\\Mindshift.SC.Common.TDS.Core.scproj
+		SccProjectUniqueName5 = Common\\Mindshift.SC.Common.TDS.Core\\Mindshift.SC.Common.TDS.Core.scproj
 		SccProjectTopLevelParentUniqueName5 = Mindshift.SC.sln
 		SccProjectName5 = Mindshift.SC.Common.TDS.Core
 		SccLocalPath5 = Mindshift.SC.Common.TDS.Core
-		SccProjectUniqueName6 = Mindshift.SC.Common.TDS.Master\\Mindshift.SC.Common.TDS.Master.scproj
+		SccProjectUniqueName6 = Common\\Mindshift.SC.Common.TDS.Master\\Mindshift.SC.Common.TDS.Master.scproj
 		SccProjectTopLevelParentUniqueName6 = Mindshift.SC.sln
 		SccProjectName6 = Mindshift.SC.Common.TDS.Master
 		SccLocalPath6 = Mindshift.SC.Common.TDS.Master
-		SccProjectUniqueName7 = Mindshift.SC.Common.Web\\Mindshift.SC.Common.Web.csproj
+		SccProjectUniqueName7 = Common\\Mindshift.SC.Common.Web\\Mindshift.SC.Common.Web.csproj
 		SccProjectTopLevelParentUniqueName7 = Mindshift.SC.sln
 		SccProjectName7 = Mindshift.SC.Common.Web
 		SccLocalPath7 = Mindshift.SC.Common.Web
-		SccProjectUniqueName8 = Mindshift.SC.Common\\Mindshift.SC.Common.csproj
+		SccProjectUniqueName8 = Common\\Mindshift.SC.Common\\Mindshift.SC.Common.csproj
 		SccProjectTopLevelParentUniqueName8 = Mindshift.SC.sln
 		SccProjectName8 = Mindshift.SC.Common
 		SccLocalPath8 = Mindshift.SC.Common
-		SccProjectUniqueName9 = Mindshift.SC.DynamicPlaceholders.TDS.Core\\Mindshift.SC.DynamicPlaceholders.TDS.Core.scproj
+		SccProjectUniqueName9 = DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders.TDS.Core\\Mindshift.SC.DynamicPlaceholders.TDS.Core.scproj
 		SccProjectTopLevelParentUniqueName9 = Mindshift.SC.sln
 		SccProjectName9 = Mindshift.SC.DynamicPlaceholders.TDS.Core
 		SccLocalPath9 = Mindshift.SC.DynamicPlaceholders.TDS.Core
-		SccProjectUniqueName10 = Mindshift.SC.DynamicPlaceholders.TDS.Master\\Mindshift.SC.DynamicPlaceholders.TDS.Master.scproj
+		SccProjectUniqueName10 = DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders.TDS.Master\\Mindshift.SC.DynamicPlaceholders.TDS.Master.scproj
 		SccProjectTopLevelParentUniqueName10 = Mindshift.SC.sln
 		SccProjectName10 = Mindshift.SC.DynamicPlaceholders.TDS.Master
 		SccLocalPath10 = Mindshift.SC.DynamicPlaceholders.TDS.Master
-		SccProjectUniqueName11 = Mindshift.SC.DynamicPlaceholders.Web\\Mindshift.SC.DynamicPlaceholders.Web.csproj
+		SccProjectUniqueName11 = DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders.Web\\Mindshift.SC.DynamicPlaceholders.Web.csproj
 		SccProjectTopLevelParentUniqueName11 = Mindshift.SC.sln
 		SccProjectName11 = Mindshift.SC.DynamicPlaceholders.Web
 		SccLocalPath11 = Mindshift.SC.DynamicPlaceholders.Web
-		SccProjectUniqueName12 = Mindshift.SC.DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders.csproj
+		SccProjectUniqueName12 = DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders\\Mindshift.SC.DynamicPlaceholders.csproj
 		SccProjectTopLevelParentUniqueName12 = Mindshift.SC.sln
 		SccProjectName12 = Mindshift.SC.DynamicPlaceholders
 		SccLocalPath12 = Mindshift.SC.DynamicPlaceholders
-		SccProjectUniqueName13 = Mindshift.SC.TfsPackageDesigner.TDS.Master\\Mindshift.SC.TfsPackageDesigner.TDS.Master.scproj
+		SccProjectUniqueName13 = TfsPackageDesigner\\Mindshift.SC.TfsPackageDesigner.TDS.Master\\Mindshift.SC.TfsPackageDesigner.TDS.Master.scproj
 		SccProjectTopLevelParentUniqueName13 = Mindshift.SC.sln
 		SccProjectName13 = Mindshift.SC.TfsPackageDesigner.TDS.Master
 		SccLocalPath13 = Mindshift.SC.TfsPackageDesigner.TDS.Master
-		SccProjectUniqueName14 = Mindshift.SC.TfsPackageDesigner.Web\\Mindshift.SC.TfsPackageDesigner.Web.csproj
+		SccProjectUniqueName14 = TfsPackageDesigner\\Mindshift.SC.TfsPackageDesigner.Web\\Mindshift.SC.TfsPackageDesigner.Web.csproj
 		SccProjectTopLevelParentUniqueName14 = Mindshift.SC.sln
 		SccProjectName14 = Mindshift.SC.TfsPackageDesigner.Web
 		SccLocalPath14 = Mindshift.SC.TfsPackageDesigner.Web
-		SccProjectUniqueName15 = Mindshift.SC.TfsPackageDesigner\\Mindshift.SC.TfsPackageDesigner.csproj
+		SccProjectUniqueName15 = TfsPackageDesigner\\Mindshift.SC.TfsPackageDesigner\\Mindshift.SC.TfsPackageDesigner.csproj
 		SccProjectTopLevelParentUniqueName15 = Mindshift.SC.sln
 		SccProjectName15 = Mindshift.SC.TfsPackageDesigner
 		SccLocalPath15 = Mindshift.SC.TfsPackageDesigner
-		SccProjectUniqueName16 = Mindshift.SC.AutoPublish\\Mindshift.SC.AutoPublish.csproj
+		SccProjectUniqueName16 = AutoPublish\\Mindshift.SC.AutoPublish\\Mindshift.SC.AutoPublish.csproj
 		SccProjectTopLevelParentUniqueName16 = Mindshift.SC.sln
 		SccProjectName16 = Mindshift.SC.AutoPublish
 		SccLocalPath16 = Mindshift.SC.AutoPublish
-		SccProjectUniqueName17 = Mindshift.SC.AutoPublish.Web\\Mindshift.SC.AutoPublish.Web.csproj
+		SccProjectUniqueName17 = AutoPublish\\Mindshift.SC.AutoPublish.Web\\Mindshift.SC.AutoPublish.Web.csproj
 		SccProjectTopLevelParentUniqueName17 = Mindshift.SC.sln
 		SccProjectName17 = Mindshift.SC.AutoPublish.Web
 		SccLocalPath17 = Mindshift.SC.AutoPublish.Web
-		SccProjectUniqueName18 = Mindshift.SC.AutoPublish.Core\\Mindshift.SC.AutoPublish.Core.scproj
+		SccProjectUniqueName18 = AutoPublish\\Mindshift.SC.AutoPublish.Core\\Mindshift.SC.AutoPublish.Core.scproj
 		SccProjectTopLevelParentUniqueName18 = Mindshift.SC.sln
 		SccProjectName18 = Mindshift.SC.AutoPublish.Core
 		SccLocalPath18 = Mindshift.SC.AutoPublish.Core
-		SccProjectUniqueName19 = Mindshift.SC.AutoPublish.Master\\Mindshift.SC.AutoPublish.Master.scproj
+		SccProjectUniqueName19 = AutoPublish\\Mindshift.SC.AutoPublish.Master\\Mindshift.SC.AutoPublish.Master.scproj
 		SccProjectTopLevelParentUniqueName19 = Mindshift.SC.sln
 		SccProjectName19 = Mindshift.SC.AutoPublish.Master
 		SccLocalPath19 = Mindshift.SC.AutoPublish.Master
-		SccProjectUniqueName20 = Mindshift.SC.ZipLogging\\Mindshift.SC.ZipLogging.csproj
+		SccProjectUniqueName20 = ZipLogging\\Mindshift.SC.ZipLogging\\Mindshift.SC.ZipLogging.csproj
 		SccProjectTopLevelParentUniqueName20 = Mindshift.SC.sln
 		SccProjectName20 = Mindshift.SC.ZipLogging
 		SccLocalPath20 = Mindshift.SC.ZipLogging
-		SccProjectUniqueName21 = Mindshift.SC.ZipLogging.Web\\Mindshift.SC.ZipLogging.Web.csproj
+		SccProjectUniqueName21 = ZipLogging\\Mindshift.SC.ZipLogging.Web\\Mindshift.SC.ZipLogging.Web.csproj
 		SccProjectTopLevelParentUniqueName21 = Mindshift.SC.sln
 		SccProjectName21 = Mindshift.SC.ZipLogging.Web
 		SccLocalPath21 = Mindshift.SC.ZipLogging.Web
