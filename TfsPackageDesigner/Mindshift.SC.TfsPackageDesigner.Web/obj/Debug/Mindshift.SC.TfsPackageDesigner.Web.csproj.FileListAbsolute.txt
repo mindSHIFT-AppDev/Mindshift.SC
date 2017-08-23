@@ -1,4 +1,0 @@
-C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.Web\bin\Mindshift.SC.TfsPackageDesigner.Web.dll
-C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.Web\bin\Mindshift.SC.TfsPackageDesigner.Web.pdb
-C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.Web\obj\Debug\Mindshift.SC.TfsPackageDesigner.Web.dll
-C:\_Projects\Mindshift.SC\Main\Mindshift.SC.TfsPackageDesigner.Web\obj\Debug\Mindshift.SC.TfsPackageDesigner.Web.pdb
