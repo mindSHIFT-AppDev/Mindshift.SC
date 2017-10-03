@@ -28,7 +28,7 @@ Status: Complete and working.
 
 Description: This module gives you the ability to schedule publish times via configuration items under System/Modules.
 
-See version 1.0 in the [Releases](/Releases) folder.
+See version 1.1 in [Releases](https://github.com/mindSHIFT-AppDev/Mindshift.SC/releases) folder.
 
 ### AdoLogging
 Status: Complete but haven't tested it in a while.
