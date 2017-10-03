@@ -20,6 +20,8 @@ namespace Mindshift.SC.AutoPublish {
 		public delegate void Worker();
 		Thread oThread;
 
+		// note: if you came here looking for the constructor, it's not here. This is a partial class so the constructor is in TemplateClasses.cs
+
 		public void Start() {
 			LogInfo("Thread Started");
 			oThread = new Thread(new ThreadStart(Init));
@@ -148,6 +150,8 @@ namespace Mindshift.SC.AutoPublish {
 					}
 
 
+					var publishMode = PublishMode.Smart;// (PublishMode)int.Parse(Publish_Mode.RawItem["Value"]);
+
 					// time to next run is todays date + run time
 					//				DateTime nextTimeToRun = new DateTime(now.Year, now.Month, now.Day, timeToRun.Hour, timeToRun.Minute, timeToRun.Second, 0);
 
@@ -161,7 +165,7 @@ namespace Mindshift.SC.AutoPublish {
 					foreach (var targetDatabase in targetDatabases) {
 						foreach (var language in languages) {
 							LogInfo("Publish started", targetDatabase, language);
-							var options = new PublishOptions(master, targetDatabase, PublishMode.Smart, language, DateTime.Now) { Deep = Include_Children };
+							var options = new PublishOptions(master, targetDatabase, publishMode, language, DateTime.Now) {  Deep = Include_Children };
 							Item rootItem = master.GetItem(Root_Path.RawItem.ID, language); // get the item in the perticular langage (is this necessary?)
 							if (rootItem == null) {
 								// TODO: how do we bring this check back?

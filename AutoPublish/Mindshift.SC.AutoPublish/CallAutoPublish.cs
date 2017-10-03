@@ -102,11 +102,17 @@ namespace Mindshift.SC.AutoPublish {
 					LogHelper.Info("Reloading Shedule: " + scheduleItem.Name + " (id:" + scheduleId + ")");
 					if (publishSchedules.ContainsKey(scheduleId)) {
 						publishSchedules[scheduleId].Stop();
-						publishSchedules[scheduleId] = new Publish_Schedule(scheduleItem);
+						if (scheduleItem["Enabled"] == "1") {
+							publishSchedules[scheduleId] = new Publish_Schedule(scheduleItem);
+						} else {
+							publishSchedules.Remove(scheduleId);
+						}
 					} else {
-						publishSchedules.Add(scheduleId, new Publish_Schedule(scheduleItem));
+						if (scheduleItem["Enabled"] == "1") {
+							publishSchedules.Add(scheduleId, new Publish_Schedule(scheduleItem));
+						}
 					}
-					publishSchedules[scheduleId].Start();
+					if (publishSchedules.ContainsKey(scheduleId)) publishSchedules[scheduleId].Start();
 				}
 				LogHelper.Info("Schedule Update Ended");
 			}

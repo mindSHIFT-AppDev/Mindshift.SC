@@ -45,8 +45,9 @@
     <PackagePublisher>Mindshift Technologies</PackagePublisher>
     <PackageVersion>1</PackageVersion>
     <PackageReadme />
-    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>

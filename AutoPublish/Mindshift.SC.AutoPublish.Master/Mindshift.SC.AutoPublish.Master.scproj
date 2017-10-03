@@ -8,7 +8,7 @@
     <ProjectGuid>272df9ae-4304-495e-9a90-daeb8293a689</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <SourceWebPhysicalPath>..\Mindshift.SC.AutoPublish.Web</SourceWebPhysicalPath>
-    <SourceWebProject>{7b7bb1e1-5f43-4f0c-a722-4a754c25035f}|Mindshift.SC.AutoPublish.Web\Mindshift.SC.AutoPublish.Web.csproj</SourceWebProject>
+    <SourceWebProject>{7b7bb1e1-5f43-4f0c-a722-4a754c25035f}|AutoPublish\Mindshift.SC.AutoPublish.Web\Mindshift.SC.AutoPublish.Web.csproj</SourceWebProject>
     <SourceWebVirtualPath>/Mindshift.SC.AutoPublish.Web.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
@@ -59,11 +59,14 @@
     <PackagePublisher>Mindshift Technologies</PackagePublisher>
     <PackageVersion>1</PackageVersion>
     <PackageReadme />
-    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
     <GeneratePackage>True</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Mindshift.SC.AutoPublish.Master_Release.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -158,6 +161,26 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Enumerations\PublishModes.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Enumerations\PublishModes\Incremental.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Enumerations\PublishModes\Republish.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Enumerations\PublishModes\SingleItem.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Enumerations\PublishModes\Smart.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\system\Modules\Mindshift SC\Auto Publish\Publish Schedules.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -230,6 +253,10 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Mindshift SC\Auto Publish\Publish Schedule\Publish Schedule Data\Publish Mode.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Mindshift SC\Auto Publish\Publish Schedule\Publish Schedule Data\Publishing Targets.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
@@ -265,18 +292,23 @@
     <CodeGenTemplate Include="Code Generation Templates\stringextensions.tt" />
   </ItemGroup>
   <ItemGroup>
-    <BundledProject Include="..\Mindshift.SC.AutoPublish.Core\Mindshift.SC.AutoPublish.Core.scproj">
-      <ProjectId>{db14e954-938b-4859-b2c2-a0c9ceb9e7e4}</ProjectId>
-    </BundledProject>
-    <BundledProject Include="..\Mindshift.SC.Common.TDS.Core\Mindshift.SC.Common.TDS.Core.scproj">
+    <BundledProject Include="..\..\Common\Mindshift.SC.Common.TDS.Core\Mindshift.SC.Common.TDS.Core.scproj">
       <ProjectId>{31dfcf1c-8be9-4d58-bdd0-31d78eb7d78a}</ProjectId>
     </BundledProject>
-    <BundledProject Include="..\Mindshift.SC.Common.TDS.Master\Mindshift.SC.Common.TDS.Master.scproj">
+    <BundledProject Include="..\..\Common\Mindshift.SC.Common.TDS.Master\Mindshift.SC.Common.TDS.Master.scproj">
       <ProjectId>{e5034b0f-db6e-404e-a070-eedddcf8b130}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\Mindshift.SC.AutoPublish.Core\Mindshift.SC.AutoPublish.Core.scproj">
+      <ProjectId>{db14e954-938b-4859-b2c2-a0c9ceb9e7e4}</ProjectId>
     </BundledProject>
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Mindshift.SC.%2a" />
+    <ExcludedAssemblies Include="System.Net.Http.dll" />
   </ItemGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

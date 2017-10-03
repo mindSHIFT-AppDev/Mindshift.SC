@@ -8,7 +8,7 @@ name: Daily
 master: {00000000-0000-0000-0000-000000000000}
 template: {D256CE5B-486C-4D69-BC9B-0803619BE54E}
 templatekey: Enumeration
-created: 20170630T151915Z
+created: 20170630T151915:636344327550370000
 
 ----version----
 language: en

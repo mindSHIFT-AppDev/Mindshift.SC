@@ -45,6 +45,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.Kernel.NoReferences.8.1.160519\lib\NET45\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Logging, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.Logging.NoReferences.8.2.170728\lib\NET452\Sitecore.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Update, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.Update.NoReferences.8.2.170728\lib\NET452\Sitecore.Update.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Zip, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.Zip.NoReferences.8.2.170728\lib\NET452\Sitecore.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -79,15 +95,7 @@
     <Content Include="App_Config\Include\xMindshift\xAdoLogging.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -8,8 +8,8 @@
     <ProjectGuid>e5034b0f-db6e-404e-a070-eedddcf8b130</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <SourceWebPhysicalPath>..\Mindshift.SC.Common.Web</SourceWebPhysicalPath>
-    <SourceWebProject>{8e317e03-22c8-452b-9ab4-416a05fe6399}|Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj</SourceWebProject>
-    <SourceWebVirtualPath>/Mindshift.SC.Common.Web.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{8e317e03-22c8-452b-9ab4-416a05fe6399}|Common\Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/../../Common/Mindshift.SC.Common.Web/Mindshift.SC.Common.Web.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -38,6 +38,8 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Mindshift.SC.Common.TDS.Master_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -48,11 +50,14 @@
     <PackagePublisher>Mindshift Technologies</PackagePublisher>
     <PackageVersion>1</PackageVersion>
     <PackageReadme />
-    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <InstallSitecoreConnector>False</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -61,12 +66,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj">
-      <Project>{8e317e03-22c8-452b-9ab4-416a05fe6399}</Project>
-      <Name>Mindshift.SC.Common.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\system.item">
@@ -123,7 +122,14 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Mindshift.SC.Common.Web\..\..\Common\Mindshift.SC.Common.Web\Mindshift.SC.Common.Web.csproj">
+      <Project>{8e317e03-22c8-452b-9ab4-416a05fe6399}</Project>
+      <Name>Mindshift.SC.Common.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <ExcludedAssemblies Include="Mindshift.SC.%2a" />
+    <ExcludedAssemblies Include="System.Net.Http.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

@@ -8,12 +8,12 @@ name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {5C6A52B1-648C-4AFC-9553-7F5079CEFCCB}
 templatekey: Publish Schedule
-created: 20170627T142258Z
+created: 20170627T142258:636341701783730000
 
 ----version----
 language: en
 version: 1
-revision: 40022048-55a7-436a-bb57-25fef376ed5d
+revision: d629d106-c065-4353-b2be-2f7f7f1fe0b7
 
 ----field----
 field: {3F97D2AE-5C82-4D54-9057-5279A18B04E8}
@@ -51,6 +51,13 @@ content-length: 1
 
 1
 ----field----
+field: {B9E2E35C-E77B-4D13-91C9-5C0AD6A78F3B}
+name: Publish Mode
+key: publish mode
+content-length: 38
+
+{627F62ED-3DC9-4A47-91B6-2936CF715D2F}
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -77,14 +84,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-40022048-55a7-436a-bb57-25fef376ed5d
+d629d106-c065-4353-b2be-2f7f7f1fe0b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170707T151333Z
+20170927T153952Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

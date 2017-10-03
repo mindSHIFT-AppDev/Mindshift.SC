@@ -8,7 +8,7 @@ name: Schedule End Date
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
-created: 20170630T152320Z
+created: 20170630T152320:636344330004070000
 
 ----field----
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
@@ -27,7 +27,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: e2f68b41-4096-4b20-822b-00b36174b7cf
+revision: 1e728da1-d11e-4727-aa3a-87056940c1a3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -42,18 +42,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e2f68b41-4096-4b20-822b-00b36174b7cf
+1e728da1-d11e-4727-aa3a-87056940c1a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170707T181601Z
+20170927T153941Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\Admin
+sitecore\admin

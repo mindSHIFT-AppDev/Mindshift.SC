@@ -1,12 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<!-- 
+  <!-- 
 	Use this file to add Per user settings to your project. 
 
 	NOTE: For changes to this file to be picked up, you must unload and re-load your project by
 	right-clicking on the project and selecting "Unload Project" / "Reload Project"
 	-->
-
-	<!--
+  <!--
 	Place any one of these properties in one of the configurations below, or create your own configuration:
 	  
     <SitecoreDeployFolder>[Per user path to deploy files to]</SitecoreDeployFolder>
@@ -15,12 +15,15 @@
     <SitecoreAccessGuid>[Guid with dashes, without the braces. i.e. xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</SitecoreAccessGuid>
     <RecursiveDeployAction>[Ignore | Delete | SitecoreRecycle]</RecursiveDeployAction>	
 	  -->
-	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-	</PropertyGroup>
-
-	<!--
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <SitecoreDeployFolder>C:\_Projects\Mindshift\Mindshift Web\_wwwMain\</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://mindshift-web82</SitecoreWebUrl>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <SitecoreAccessGuid>[Guid with dashes, without the braces. i.e. xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</SitecoreAccessGuid>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <DisableFileDeployment>False</DisableFileDeployment>
+  </PropertyGroup>
+  <!--
 	Create per user file replacements by constructing replacement nodes in the item groups below.
 	
 	<ItemGroup Condition=" '$(Configuration)' == 'Debug' ">

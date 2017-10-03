@@ -42,8 +42,9 @@
     <PackagePublisher>Mindshift Technologies</PackagePublisher>
     <PackageVersion>1</PackageVersion>
     <PackageReadme />
-    <SitecoreAssemblyPath>C:\_Projects\Mindshift.SC\Main\ExternalReferences</SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
+    <SitecoreAssemblyPath>
+    </SitecoreAssemblyPath>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
@@ -56,5 +57,9 @@
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
+	<PropertyGroup>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+	</PropertyGroup>
+	<Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

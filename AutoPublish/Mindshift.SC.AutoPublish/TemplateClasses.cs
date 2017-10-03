@@ -131,6 +131,16 @@ namespace Mindshift.SC.AutoPublish
                     					MultiListFld Languages  {get; }
                     			
 								/// <summary>
+					/// The Publish Mode field.
+					/// <para></para>
+					/// <para>Field Type: Droplink</para>		
+					/// <para>Field ID: b9e2e35c-e77b-4d13-91c9-5c0ad6a78f3b</para>
+					/// <para>Custom Data: </para>
+					/// </summary>
+                    [SitecoreField("b9e2e35c-e77b-4d13-91c9-5c0ad6a78f3b")]
+                    					LookupFld Publish_Mode  {get; }
+                    			
+								/// <summary>
 					/// The Publishing Targets field.
 					/// <para></para>
 					/// <para>Field Type: Multilist</para>		
@@ -332,6 +342,18 @@ namespace Mindshift.SC.AutoPublish
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
                 [SitecoreField("f47bd516-e96b-40b2-9c5c-687d3a4fed8e")]
                 				public virtual MultiListFld Languages  {get { return new MultiListFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("f47bd516-e96b-40b2-9c5c-687d3a4fed8e")] : null)); } }
+                
+					
+		
+				/// <summary>
+				/// The Publish Mode field.
+				/// <para>Field Type: Droplink</para>		
+				/// <para>Field ID: b9e2e35c-e77b-4d13-91c9-5c0ad6a78f3b</para>
+				/// <para>Custom Data: </para>
+				/// </summary>
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - Mindshift.tt", "1.0")]
+                [SitecoreField("b9e2e35c-e77b-4d13-91c9-5c0ad6a78f3b")]
+                				public virtual LookupFld Publish_Mode  {get { return new LookupFld(InnerItem, (InnerItem != null ? InnerItem.Fields[new global::Sitecore.Data.ID("b9e2e35c-e77b-4d13-91c9-5c0ad6a78f3b")] : null)); } }
                 
 					
 		
