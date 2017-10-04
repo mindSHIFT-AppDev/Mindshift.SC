@@ -12,6 +12,9 @@ using Sitecore.Publishing;
 using Sitecore.StringExtensions;
 using Sitecore.Diagnostics.PerformanceCounters;
 using Sitecore.Data.Managers;
+using log4net;
+using System.IO;
+using System.Text;
 
 namespace Mindshift.SC.AutoPublish {
 	public partial class Publish_Schedule { // note: underscore because that's what it is in TemplateClasses.cs
@@ -31,13 +34,119 @@ namespace Mindshift.SC.AutoPublish {
 		private void LogError(string message) {
 			LogHelper.Error(message, this.SCItem.Paths.FullPath);
 		}
-		
+
 		private void LogError(string message, Exception ex) {
 			message += string.Format("\n\t### Message: {0}, StackTrace: {1}", ex.Message, ex.StackTrace); // TODO: do we need InnerException?
 			LogHelper.Error(message, this.SCItem.Paths.FullPath, ex);
 		}
 		private void LogInfo(string message) {
 			LogHelper.Info(message, this.SCItem.Paths.FullPath);
+		}
+		
+		private void LogDebug(string message, Publisher obj) {
+			var sb = new StringBuilder(message);
+
+			sb.Append("\n\t### WillBeQueued: ");
+			sb.Append(obj.WillBeQueued);
+
+			sb.Append("\n\t### CompareRevisions: ");
+			sb.Append(obj.Options.CompareRevisions);
+			
+			sb.Append("\n\t### Deep: ");
+			sb.Append(obj.Options.Deep);
+			
+			sb.Append("\n\t### ExplicitlySetFromDate: ");
+			sb.Append(obj.Options.ExplicitlySetFromDate);
+
+			sb.Append("\n\t### FromDate: ");
+			sb.Append(obj.Options.FromDate);
+
+			sb.Append("\n\t### FromDate: ");
+			sb.Append(obj.Options.Language);
+
+			sb.Append("\n\t### Mode: ");
+			sb.Append(obj.Options.Mode);
+
+			sb.Append("\n\t### PublishDate: ");
+			sb.Append(obj.Options.PublishDate);
+
+			sb.Append("\n\t### PublishingTargets: ");
+			sb.Append(string.Join(", ", obj.Options.PublishingTargets));
+
+			sb.Append("\n\t### PublishRelatedItems: ");
+			sb.Append(obj.Options.PublishRelatedItems);
+
+			sb.Append("\n\t### RepublishAll: ");
+			sb.Append(obj.Options.RepublishAll);
+
+			sb.Append("\n\t### SourceDatabase: ");
+			if (obj.Options.SourceDatabase != null) {
+				sb.Append(obj.Options.SourceDatabase.Name);
+			}
+
+			sb.Append("\n\t### TargetDatabase: ");
+			if (obj.Options.TargetDatabase != null) {
+				sb.Append(obj.Options.TargetDatabase.Name);
+			}
+			sb.Append("\n\t### UserName: ");
+			sb.Append(obj.Options.UserName);
+
+			LogHelper.Debug(sb.ToString(), this.SCItem.Paths.FullPath);
+		}
+
+		private void LogDebug(string message, Publish_Schedule obj) {
+			var sb = new StringBuilder(message);
+
+			sb.Append("\n\t### Days_Of_The_Weeks: ");
+			sb.Append(obj.Days_Of_The_Weeks.Raw);
+
+			sb.Append("\n\t### Day_Of_The_Month: ");
+			sb.Append(obj.Day_Of_The_Month.Raw);
+			
+			sb.Append("\n\t### Day_Of_The_Week: ");
+			sb.Append(obj.Day_Of_The_Week.Raw);
+
+			sb.Append("\n\t### Enabled: ");
+			sb.Append(obj.Enabled.Raw);
+			
+			sb.Append("\n\t### Frequency: ");
+			sb.Append(obj.Frequency.Raw);
+
+			sb.Append("\n\t### Include_Children: ");
+			sb.Append(obj.Include_Children.Raw);
+
+			sb.Append("\n\t### Languages: ");
+			sb.Append(obj.Languages.Raw);
+
+			sb.Append("\n\t### Publishing_Targets: ");
+			sb.Append(obj.Publishing_Targets.Raw);
+
+			sb.Append("\n\t### Publish_Mode: ");
+			sb.Append(obj.Publish_Mode.Raw);
+
+			sb.Append("\n\t### Root_Path: ");
+			sb.Append(obj.Root_Path.Raw);
+
+			sb.Append("\n\t### Schedule_End_Date: ");
+			sb.Append(obj.Schedule_End_Date.Raw);
+
+			sb.Append("\n\t### Schedule_Start_Date: ");
+			sb.Append(obj.Schedule_Start_Date.Raw);
+
+			sb.Append("\n\t### Specific_Date_And_Time: ");
+			sb.Append(obj.Specific_Date_And_Time.Raw);
+
+			sb.Append("\n\t### Time_Of_The_Day: ");
+			sb.Append(obj.Time_Of_The_Day.Raw);
+
+			sb.Append("\n\t### Time_Of_The_Day: ");
+			sb.Append(obj.Time_Of_The_Day.Raw);
+
+			LogHelper.Debug(sb.ToString(), this.SCItem.Paths.FullPath);
+		}
+
+		private void LogDebug(string message) {
+			LogDebug(message, this);
 		}
 
 		private void LogInfo(string message, Database database, Sitecore.Globalization.Language language, PublishStatistics statistics = null) {
@@ -149,23 +258,29 @@ namespace Mindshift.SC.AutoPublish {
 							return;
 					}
 
-
-					var publishMode = PublishMode.Smart;// (PublishMode)int.Parse(Publish_Mode.RawItem["Value"]);
+					int intPublishMode = 0;
+					int.TryParse(Publish_Mode.RawItem["Value"], out intPublishMode);
+					var publishMode = (PublishMode)intPublishMode;
 
 					// time to next run is todays date + run time
 					//				DateTime nextTimeToRun = new DateTime(now.Year, now.Month, now.Day, timeToRun.Hour, timeToRun.Minute, timeToRun.Second, 0);
+
+					LogDebug("Schedule Loaded", this);
+
 
 					// how long we have to wait
 					var timeToWait = timeToRun - now;
 					LogInfo("Waiting: " + timeToWait);
 					Thread.Sleep(timeToWait); // hush little thready...
 
+					LogDebug("Schedule Running", this);
+
 					var targetDatabases = Publishing_Targets.RawItems.Select(d => Factory.GetDatabase(d["Target database"]));
 
 					foreach (var targetDatabase in targetDatabases) {
 						foreach (var language in languages) {
 							LogInfo("Publish started", targetDatabase, language);
-							var options = new PublishOptions(master, targetDatabase, publishMode, language, DateTime.Now) {  Deep = Include_Children };
+							var options = new PublishOptions(master, targetDatabase, publishMode, language, DateTime.Now) { Deep = Include_Children };
 							Item rootItem = master.GetItem(Root_Path.RawItem.ID, language); // get the item in the perticular langage (is this necessary?)
 							if (rootItem == null) {
 								// TODO: how do we bring this check back?
@@ -175,6 +290,9 @@ namespace Mindshift.SC.AutoPublish {
 							options.RootItem = rootItem;
 							Publisher publisher = new Publisher(options);
 							bool willBeQueued = publisher.WillBeQueued;
+
+							LogDebug("Publisher Running", publisher);
+
 
 							// TODO: lock publishing while this is happening... possibly check queue?
 							LogInfo("Executing publisher started");
@@ -188,7 +306,7 @@ namespace Mindshift.SC.AutoPublish {
 
 			} catch (ThreadAbortException) {
 				// LogInfo("Thread aborted."); // do nothing here, I most likely wanted to abort the thread. Thought about logging anyway, but it would be to verbose
-			} catch(Exception ex) {
+			} catch (Exception ex) {
 				LogError("Publishing Thread had a fatal error.", ex);
 			}
 		}

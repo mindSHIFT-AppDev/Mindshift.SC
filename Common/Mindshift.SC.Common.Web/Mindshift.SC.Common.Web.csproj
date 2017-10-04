@@ -104,7 +104,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Mindshift Web.pubxml" />
   </ItemGroup>
   <ItemGroup>

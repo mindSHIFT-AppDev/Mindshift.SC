@@ -304,6 +304,7 @@
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Mindshift.SC.%2a" />
+    <ExcludedAssemblies Include="ObjectDumper.%2a" />
     <ExcludedAssemblies Include="System.Net.Http.dll" />
   </ItemGroup>
   <PropertyGroup>
