@@ -215,12 +215,16 @@
     <Compile Include="Pipelines\Initialize\ConfigureWebApi.cs" />
     <Compile Include="Pipelines\Initialize\CustomHttpControllerSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveHooks\ItemDisabled.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="App_Config\Include\Custom\Custom.WebApi.config" />
+    <Content Include="App_Config\Include\xMindshift\xItemDisabled.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
