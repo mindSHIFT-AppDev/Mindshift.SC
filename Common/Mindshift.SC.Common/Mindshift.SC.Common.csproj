@@ -222,9 +222,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="App_Config\Include\Custom\Custom.WebApi.config" />
-    <Content Include="App_Config\Include\xMindshift\xItemDisabled.config">
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

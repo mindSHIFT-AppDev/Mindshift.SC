@@ -104,6 +104,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\xMindshift\xItemDisabled.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Mindshift Web.pubxml" />
   </ItemGroup>
